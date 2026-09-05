@@ -10,10 +10,10 @@ A modern, bilingual corporate website for **Aban Hesab**, an audit and accountin
 
 This repo represents an early/demo build of the site, built entirely with **HTML, CSS, JavaScript, and JSON** — no backend involved.
 
-| Phase                       | Description                       | Status                   |
-| --------------------------- | --------------------------------- | ------------------------ |
-| 🟢 Demo version (this repo) | Static frontend, HTML/CSS/JS/JSON | ✅ Done                  |
-| 🔵 Final version            | Live production site              | 🌐 [Official Website](#) |
+| Phase | Description | Status |
+|---|---|---|
+| 🟢 Demo version (this repo) | Static frontend, HTML/CSS/JS/JSON | ✅ Done |
+| 🔵 Final version | Live production site | 🌐 [Official Website](#) |
 
 ---
 
@@ -78,3 +78,13 @@ npx serve .
 
 - [ ] Further UI/UX improvements
 - [ ] Content completion for all pages
+
+---
+
+## 👤 Author
+
+**Kourosh**
+🚀 Frontend Developer | Learning Python & Django
+
+- 📧 abasikourosh72@gmail.com
+- 💬 [Telegram](https://t.me/kourosh2087)
