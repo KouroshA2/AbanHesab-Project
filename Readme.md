@@ -31,16 +31,16 @@ This repo represents an early/demo build of the site, built entirely with **HTML
 ## 📸 Screenshots
 
 **Homepage (Persian / RTL)**
-![Homepage - Persian](assets/screenshots/homepage.png)
+<img src="assets/screenshots/homepage.png" width="700" />
 
 **Homepage (English / LTR)**
-![Homepage - English](assets/screenshots/homepage-en.png)
+<img src="assets/screenshots/homepage-en.png" width="700" />
 
 **About Page**
-![About Page](assets/screenshots/about.png)
+<img src="assets/screenshots/about.png" width="700" />
 
 **Services Page**
-![Services Page](assets/screenshots/services.png)
+<img src="assets/screenshots/services.png" width="700" />
 
 ---
 
