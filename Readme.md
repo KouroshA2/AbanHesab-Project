@@ -78,3 +78,13 @@ npx serve .
 
 - [ ] Further UI/UX improvements
 - [ ] Content completion for all pages
+
+---
+
+## 👤 Author
+
+**Kourosh**
+🚀 Frontend Developer | Learning Python & Django
+
+- 📧 abasikourosh72@gmail.com
+- 💬 [Telegram](https://t.me/kourosh2087)
