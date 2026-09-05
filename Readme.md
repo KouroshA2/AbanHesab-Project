@@ -28,6 +28,22 @@ This repo represents an early/demo build of the site, built entirely with **HTML
 
 ---
 
+## 📸 Screenshots
+
+**Homepage (Persian / RTL)**
+![Homepage - Persian](screenshots/homepage.png)
+
+**Homepage (English / LTR)**
+![Homepage - English](screenshots/homepage-en.png)
+
+**About Page**
+![About Page](screenshots/about.png)
+
+**Services Page**
+![Services Page](screenshots/services.png)
+
+---
+
 ## ✨ Features
 
 - Fully responsive design (mobile, tablet, desktop)
