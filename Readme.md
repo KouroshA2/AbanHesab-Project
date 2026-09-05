@@ -10,10 +10,10 @@ A modern, bilingual corporate website for **Aban Hesab**, an audit and accountin
 
 This repo represents an early/demo build of the site, built entirely with **HTML, CSS, JavaScript, and JSON** — no backend involved.
 
-| Phase                       | Description                       | Status                   |
-| --------------------------- | --------------------------------- | ------------------------ |
-| 🟢 Demo version (this repo) | Static frontend, HTML/CSS/JS/JSON | ✅ Done                  |
-| 🔵 Final version            | Live production site              | 🌐 [Official Website](#) |
+| Phase | Description | Status |
+|---|---|---|
+| 🟢 Demo version (this repo) | Static frontend, HTML/CSS/JS/JSON | ✅ Done |
+| 🔵 Final version | Live production site | 🌐 [Official Website](#) |
 
 ---
 
@@ -25,6 +25,22 @@ This repo represents an early/demo build of the site, built entirely with **HTML
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
   <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white" />
 </p>
+
+---
+
+## 📸 Screenshots
+
+**Homepage (Persian / RTL)**
+![Homepage - Persian](screenshots/homepage.png)
+
+**Homepage (English / LTR)**
+![Homepage - English](screenshots/homepage-en.png)
+
+**About Page**
+![About Page](screenshots/about.png)
+
+**Services Page**
+![Services Page](screenshots/services.png)
 
 ---
 
