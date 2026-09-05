@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("ah-theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با ما | موسسه حسابرسی آبان حساب</title>
+    <meta
+      name="description"
+      content="راه‌های تماس با موسسه حسابرسی آبان حساب شامل آدرس دفتر در تهران، پاسداران، شماره تماس و فرم ارتباط برای درخواست مشاوره."
+    />
+    <meta property="og:title" content="تماس با ما | موسسه حسابرسی آبان حساب" />
+    <meta
+      property="og:description"
+      content="راه‌های تماس با موسسه حسابرسی آبان حساب شامل آدرس دفتر در تهران، پاسداران، شماره تماس و فرم ارتباط برای درخواست مشاوره."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:site_name" content="موسسه حسابرسی آبان حساب" />
+    <link rel="stylesheet" href="../css/vazirmatn-local.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lang-switcher.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header id="site-header">
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">آبان حساب<small>موسسه حسابرسی</small></span>
+        </a>
+
+        <nav class="main-nav" aria-label="منوی اصلی">
+          <ul>
+            <li><a href="../index.html" class="nav-link">خانه</a></li>
+            <li><a href="about.html" class="nav-link">درباره ما</a></li>
+            <li><a href="services.html" class="nav-link">خدمات</a></li>
+            <li><a href="industries.html" class="nav-link">صنایع</a></li>
+            <li><a href="experience.html" class="nav-link">تجربه ما</a></li>
+            <li>
+              <a href="contact.html" class="nav-link active">تماس با ما</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a
+            href="tel:02126712860"
+            class="btn btn-outline"
+            style="color: #fff; border-color: rgba(255, 255, 255, 0.28)"
+            >۰۲۱-۲۶۷۱۲۸۶۰</a
+          >
+          <a href="#contact-form" class="btn btn-primary">درخواست مشاوره</a>
+          <div class="lang-switch" role="group" aria-label="زبان / Language">
+            <a href="../en/pages/contact.html" class="lang-btn" lang="en">EN</a>
+            <a href="#" class="lang-btn is-active" lang="fa" aria-current="page"
+              >FA</a
+            >
+          </div>
+          <button
+            class="theme-toggle"
+            id="theme-toggle-btn"
+            type="button"
+            aria-label="تغییر پوسته روشن/تیره"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          </button>
+          <button
+            class="mobile-toggle"
+            id="mobile-open-btn"
+            aria-label="باز کردن منو"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-top">
+        <span class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">آبان حساب</span>
+        </span>
+        <div class="mobile-menu-actions">
+          <div class="lang-switch" role="group" aria-label="زبان / Language">
+            <a href="../en/pages/contact.html" class="lang-btn" lang="en">EN</a>
+            <a href="#" class="lang-btn is-active" lang="fa" aria-current="page"
+              >FA</a
+            >
+          </div>
+          <button
+            class="mobile-close"
+            id="mobile-close-btn"
+            aria-label="بستن منو"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <ul>
+        <li><a href="../index.html" class="nav-link-mobile">خانه</a></li>
+        <li><a href="about.html" class="nav-link-mobile">درباره ما</a></li>
+        <li><a href="services.html" class="nav-link-mobile">خدمات</a></li>
+        <li><a href="industries.html" class="nav-link-mobile">صنایع</a></li>
+        <li><a href="experience.html" class="nav-link-mobile">تجربه ما</a></li>
+        <li>
+          <a href="contact.html" class="nav-link-mobile active">تماس با ما</a>
+        </li>
+      </ul>
+      <a
+        href="#contact-form"
+        class="btn btn-primary"
+        style="background: var(--sky-500)"
+        >درخواست مشاوره</a
+      >
+    </div>
+
+    <!-- ================= CONTACT PAGE ================= -->
+    <main id="contact-page">
+      <!-- HERO -->
+      <section class="hero page-hero">
+        <div class="container">
+          <div class="hero-copy">
+            <div class="eyebrow">تماس با ما</div>
+            <h1>ارتباط با آبان حساب</h1>
+            <p>
+              برای طرح نیاز حرفه‌ای خود، مشاوره یا هماهنگی جلسه، از طریق اطلاعات
+              زیر یا فرم تماس با موسسه حسابرسی آبان حساب در ارتباط باشید.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ADDRESS / PHONE -->
+      <section>
+        <div class="container">
+          <div class="contact-info-grid">
+            <div class="contact-info-card">
+              <div class="cred-tag">آدرس</div>
+              <h4>دفتر موسسه</h4>
+              <p>
+                تهران، پاسداران، خیابان گل‌نبی، بعد از ناطق نوری، پلاک ۴۱، واحد
+                ۸
+              </p>
+            </div>
+            <div class="contact-info-card">
+              <div class="cred-tag">تلفن</div>
+              <h4>تماس تلفنی</h4>
+              <p><a href="tel:02126712860">۰۲۱-۲۶۷۱۲۸۶۰</a></p>
+            </div>
+          </div>
+
+          <!-- CONTACT FORM -->
+          <div class="section-head center">
+            <div class="eyebrow">فرم تماس</div>
+            <h2 class="section-title">برای ما پیام بگذارید</h2>
+          </div>
+          <form class="contact-form" id="contact-form" onsubmit="return false;">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-name">نام</label>
+                <input
+                  type="text"
+                  id="cf-name"
+                  name="name"
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-field">
+                <label for="cf-company">نام شرکت</label>
+                <input
+                  type="text"
+                  id="cf-company"
+                  name="company"
+                  autocomplete="organization"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-phone">شماره تماس</label>
+                <input
+                  type="tel"
+                  id="cf-phone"
+                  name="phone"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="form-field">
+                <label for="cf-email">ایمیل</label>
+                <input
+                  type="email"
+                  id="cf-email"
+                  name="email"
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="cf-service">نوع خدمت موردنظر</label>
+              <select id="cf-service" name="service">
+                <option value="">انتخاب کنید</option>
+                <option value="حسابرسی">حسابرسی</option>
+                <option value="خدمات مالی، حسابداری و مالیاتی">
+                  خدمات مالی، حسابداری و مالیاتی
+                </option>
+                <option value="سایر خدمات حرفه‌ای">سایر خدمات حرفه‌ای</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="cf-message">پیام</label>
+              <textarea id="cf-message" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">ارسال پیام</button>
+            <p class="form-note">
+              این فرم در حال حاضر نمایشی است و پیام‌ها ارسال یا ذخیره نمی‌شوند.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-mark"></span>
+              <span class="logo-text">آبان حساب</span>
+            </div>
+            <p>
+              موسسه حسابرسی آبان حساب (حسابداران رسمی) — ارائه خدمات حرفه‌ای
+              حسابرسی، مالی و مشاوره مدیریت از سال ۱۳۸۱.
+            </p>
+          </div>
+          <div>
+            <h5>دسترسی سریع</h5>
+            <ul>
+              <li><a href="about.html">درباره ما</a></li>
+              <li><a href="services.html">خدمات</a></li>
+              <li><a href="industries.html">صنایع</a></li>
+              <li><a href="experience.html">تجربه ما</a></li>
+              <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>خدمات</h5>
+            <ul>
+              <li><a href="services.html">حسابرسی</a></li>
+              <li><a href="services.html">مالی، حسابداری و مالیاتی</a></li>
+              <li><a href="services.html">سایر خدمات حرفه‌ای</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>تماس</h5>
+            <div class="footer-contact-note">
+              تهران، پاسداران، خیابان گل‌نبی، بعد از ناطق نوری، پلاک ۴۱، واحد ۸
+            </div>
+            <div class="footer-contact-note">
+              <a href="tel:02126712860">۰۲۱-۲۶۷۱۲۸۶۰</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© موسسه حسابرسی آبان حساب — تمامی حقوق محفوظ است.</span>
+          <span>حسابداران رسمی</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Contact form is frontend-only: no submit handler, no backend, no external service. -->
+    <script src="../js/navigation.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/scroll-reveal.js"></script>
+    <script src="../js/smooth-scroll.js"></script>
+    <script src="../js/counter.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("ah-theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Aban Hesab Audit Institute</title>
+    <meta
+      name="description"
+      content="Learn about Aban Hesab Audit Institute: its history since 1381, goals and values, workforce composition, management and professional credentials."
+    />
+    <meta property="og:title" content="About Us | Aban Hesab Audit Institute" />
+    <meta
+      property="og:description"
+      content="Learn about Aban Hesab Audit Institute: its history since 1381, goals and values, workforce composition, management and professional credentials."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Aban Hesab Audit Institute" />
+    <link rel="alternate" hreflang="fa" href="../../pages/about.html" />
+    <link rel="alternate" hreflang="en" href="about.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/lang-switcher.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header id="site-header">
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text"
+            >Aban Hesab<small>Audit Institute</small></span
+          >
+        </a>
+
+        <nav class="main-nav" aria-label="Main menu">
+          <ul>
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About Us</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="industries.html" class="nav-link">Industries</a></li>
+            <li>
+              <a href="experience.html" class="nav-link">Our Experience</a>
+            </li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a
+            href="contact.html"
+            class="btn btn-outline"
+            style="color: #fff; border-color: rgba(255, 255, 255, 0.28)"
+            >Contact Us</a
+          >
+          <a href="contact.html" class="btn btn-primary"
+            >Request Consultation</a
+          >
+          <div class="lang-switch" role="group" aria-label="Language / زبان">
+            <a
+              href="about.html"
+              class="lang-btn is-active"
+              lang="en"
+              aria-current="page"
+              >EN</a
+            >
+            <a href="../../pages/about.html" class="lang-btn" lang="fa">FA</a>
+          </div>
+          <button
+            class="theme-toggle"
+            id="theme-toggle-btn"
+            type="button"
+            aria-label="Toggle light/dark theme"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          </button>
+          <button
+            class="mobile-toggle"
+            id="mobile-open-btn"
+            aria-label="Open menu"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-top">
+        <span class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">Aban Hesab</span>
+        </span>
+        <div class="mobile-menu-actions">
+          <div class="lang-switch" role="group" aria-label="Language / زبان">
+            <a
+              href="about.html"
+              class="lang-btn is-active"
+              lang="en"
+              aria-current="page"
+              >EN</a
+            >
+            <a href="../../pages/about.html" class="lang-btn" lang="fa">FA</a>
+          </div>
+          <button
+            class="mobile-close"
+            id="mobile-close-btn"
+            aria-label="Close menu"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <ul>
+        <li><a href="../index.html" class="nav-link-mobile">Home</a></li>
+        <li>
+          <a href="about.html" class="nav-link-mobile active">About Us</a>
+        </li>
+        <li><a href="services.html" class="nav-link-mobile">Services</a></li>
+        <li>
+          <a href="industries.html" class="nav-link-mobile">Industries</a>
+        </li>
+        <li>
+          <a href="experience.html" class="nav-link-mobile">Our Experience</a>
+        </li>
+        <li><a href="contact.html" class="nav-link-mobile">Contact Us</a></li>
+      </ul>
+      <a
+        href="contact.html"
+        class="btn btn-primary"
+        style="background: var(--sky-500)"
+        >Request Consultation</a
+      >
+    </div>
+
+    <!-- ================= ABOUT PAGE ================= -->
+    <main id="about-page">
+      <!-- INTRO -->
+      <section class="hero page-hero">
+        <div class="container">
+          <div class="hero-copy">
+            <div class="eyebrow">About Us</div>
+            <h1>Aban Hesab Audit Institute (Certified Public Accountants)</h1>
+            <p>
+              Aban Hesab Audit Institute (Certified Public Accountants) is
+              composed of specialists and experts skilled in audit, accounting
+              and management affairs, and has been providing professional audit,
+              financial, tax and management consulting services since 1381.
+            </p>
+            <p>
+              Relying on a combination of certified public accountants, senior
+              supervisors and staff, PhD-qualified specialists and accounting
+              experts, the institute provides its professional services to
+              Iranian and international companies.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GOALS -->
+      <section class="goals">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">Institute Goals</div>
+            <h2 class="section-title">The Path We Strive For</h2>
+            <p class="section-sub">
+              These goals are defined based on the institute's continuous
+              activity since 1381 in the fields of audit, finance, tax and
+              management.
+            </p>
+          </div>
+          <div class="goals-grid">
+            <div class="goal-card">
+              <div class="goal-num">01</div>
+              <p>
+                Becoming the first choice of Iranian and international companies
+                for professional services.
+              </p>
+            </div>
+            <div class="goal-card">
+              <div class="goal-num">02</div>
+              <p>
+                Becoming the first choice of specialized accounting, audit,
+                financial and management professionals seeking to join an audit
+                institute.
+              </p>
+            </div>
+            <div class="goal-card">
+              <div class="goal-num">03</div>
+              <p>
+                A leading institute in providing modern audit, financial, tax
+                and management services inside and outside Iran.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALUES -->
+      <section class="values">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">Values</div>
+            <h2 class="section-title">The Values That Shape Our Path</h2>
+          </div>
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-mark">01</div>
+              <p>We love what we do.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-mark">02</div>
+              <p>
+                We go beyond our commitments and responsibilities to earn our
+                clients' satisfaction.
+              </p>
+            </div>
+            <div class="value-item">
+              <div class="value-mark">03</div>
+              <p>We are committed to delivering on what we promise.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-mark">04</div>
+              <p>We believe that "we can."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HISTORY -->
+      <section class="history" style="background: var(--bg-elevated)">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">History</div>
+            <h2 class="section-title">The Institute's Growth Path</h2>
+            <p class="section-sub">
+              From its establishment in 1381, through its merger with Saman
+              Pendar in 1397, to its separation from it in 1401, the institute
+              has continued its growth path.
+            </p>
+          </div>
+          <div class="timeline-grid">
+            <div class="timeline-item">
+              <div class="timeline-year">1381</div>
+              <p>Establishment of Aban Hesab Audit Institute.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1397</div>
+              <p>Merger of the institute with Saman Pendar.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1401</div>
+              <p>Separation of the institute from Saman Pendar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORKFORCE STATS -->
+      <section>
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">Workforce Statistics</div>
+            <h2 class="section-title">Specialized Workforce Composition</h2>
+            <p class="section-sub">
+              The institute's workforce consists of 34 staff members, including
+              8 certified public accountants, 10 senior supervisors and staff, 2
+              PhD holders, and 14 accounting experts and senior experts.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--
+    NOTE: counter.js auto-animates any ".stat-num" element with neither
+    [data-count] nor [data-static], and always renders the result in
+    Persian digits (shared, hardcoded behavior — see js/counter.js).
+    As established on the Stage 19 English homepage, "data-static" (an
+    existing pattern already used by the Persian site) is used here so
+    counter.js skips these and the Western digits stay intact.
+  -->
+      <section class="stats stats-5" style="padding: 0 0 96px">
+        <div class="container">
+          <div class="stat-item">
+            <div class="stat-num" data-static="34">34</div>
+            <div class="stat-label">Staff Members</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-static="8">8</div>
+            <div class="stat-label">Certified Public Accountants</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-static="10">10</div>
+            <div class="stat-label">Senior Supervisors &amp; Staff</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-static="2">2</div>
+            <div class="stat-label">PhD Holders</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-static="14">14</div>
+            <div class="stat-label">
+              Accounting Experts &amp; Senior Experts
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MANAGEMENT -->
+      <section class="management">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">Management</div>
+            <h2 class="section-title">
+              Professional Expertise &amp; Management
+            </h2>
+            <p class="section-sub">
+              Professional leadership of the institute is entrusted to its
+              partners and technical managers.
+            </p>
+            <a href="team.html" class="btn-arrow" style="margin-top: 8px">
+              View the Full Leadership Team
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path
+                  d="M14 6l-6 6 6 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="management-grid">
+            <div class="member-card">
+              <div class="member-avatar">H</div>
+              <h4>Hassan Hassanzadeh</h4>
+              <span>Partner &amp; Chairman of the Board</span>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">F</div>
+              <h4>Farzad Bayat</h4>
+              <span>Partner &amp; Vice Chairman of the Board</span>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">M</div>
+              <h4>Meysam Moslemi</h4>
+              <span>Partner &amp; CEO</span>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">A</div>
+              <h4>Arman Narouei</h4>
+              <span>Technical Manager</span>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">E</div>
+              <h4>Elnaz Golzari</h4>
+              <span>Technical Manager</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CREDENTIALS -->
+      <section class="credentials">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">Professional Credentials</div>
+            <h2 class="section-title">Professional Credentials</h2>
+            <p class="section-sub">
+              Official membership in the Iranian Association of Certified Public
+              Accountants, and a history of membership among the trusted
+              institutions of the Securities and Exchange Organization, are part
+              of the institute's professional credentials.
+            </p>
+          </div>
+          <div class="cred-grid">
+            <div class="cred-card">
+              <div class="cred-tag">Official Membership</div>
+              <h4>
+                Member of the Iranian Association of Certified Public
+                Accountants
+              </h4>
+              <div class="cred-detail">Membership Code: 721004</div>
+            </div>
+            <div class="cred-card">
+              <div class="cred-tag">Credential History</div>
+              <h4>
+                Member of the Securities and Exchange Organization's Trusted
+                Institutions, Grade "A"
+              </h4>
+              <div class="cred-detail">Until 1397</div>
+              <div class="cred-note">
+                This relates to the institute's historical status until year
+                1397.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-mark"></span>
+              <span class="logo-text">Aban Hesab</span>
+            </div>
+            <p>
+              Aban Hesab Audit Institute (Certified Public Accountants) —
+              providing professional audit, financial and management consulting
+              services since 1381.
+            </p>
+          </div>
+          <div>
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="industries.html">Industries</a></li>
+              <li><a href="experience.html">Our Experience</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Services</h5>
+            <ul>
+              <li><a href="services.html">Audit</a></li>
+              <li>
+                <a href="services.html">Financial, Accounting &amp; Tax</a>
+              </li>
+              <li>
+                <a href="services.html"
+                  >Consulting &amp; Professional Services</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5>Contact</h5>
+            <div class="footer-contact-note">
+              Tehran, Pasdaran, Gol-Nabi St., after Nategh Nouri, No. 41, Unit 8
+            </div>
+            <div class="footer-contact-note">
+              <a href="tel:02126712860">021-26712860</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© Aban Hesab Audit Institute — All rights reserved.</span>
+          <span>Certified Public Accountants</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/scroll-reveal.js"></script>
+    <script src="../../js/smooth-scroll.js"></script>
+    <script src="../../js/counter.js"></script>
+    <script src="../../js/animations.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/theme.js"></script>
+  </body>
+</html>

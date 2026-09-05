@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("ah-theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره ما | موسسه حسابرسی آبان حساب</title>
+    <meta
+      name="description"
+      content="آشنایی با موسسه حسابرسی آبان حساب: تاریخچه از سال ۱۳۸۱، اهداف و ارزش‌ها، ترکیب نیروی انسانی، مدیریت و اعتبار حرفه‌ای موسسه."
+    />
+    <meta property="og:title" content="درباره ما | موسسه حسابرسی آبان حساب" />
+    <meta
+      property="og:description"
+      content="آشنایی با موسسه حسابرسی آبان حساب: تاریخچه از سال ۱۳۸۱، اهداف و ارزش‌ها، ترکیب نیروی انسانی، مدیریت و اعتبار حرفه‌ای موسسه."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:site_name" content="موسسه حسابرسی آبان حساب" />
+    <link rel="stylesheet" href="../css/vazirmatn-local.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lang-switcher.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header id="site-header">
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">آبان حساب<small>موسسه حسابرسی</small></span>
+        </a>
+
+        <nav class="main-nav" aria-label="منوی اصلی">
+          <ul>
+            <li><a href="../index.html" class="nav-link">خانه</a></li>
+            <li><a href="about.html" class="nav-link active">درباره ما</a></li>
+            <li><a href="services.html" class="nav-link">خدمات</a></li>
+            <li><a href="industries.html" class="nav-link">صنایع</a></li>
+            <li><a href="experience.html" class="nav-link">تجربه ما</a></li>
+            <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a
+            href="contact.html"
+            class="btn btn-outline"
+            style="color: #fff; border-color: rgba(255, 255, 255, 0.28)"
+            >تماس با ما</a
+          >
+          <a href="contact.html" class="btn btn-primary">درخواست مشاوره</a>
+          <div class="lang-switch" role="group" aria-label="زبان / Language">
+            <a href="../en/pages/about.html" class="lang-btn" lang="en">EN</a>
+            <a href="#" class="lang-btn is-active" lang="fa" aria-current="page"
+              >FA</a
+            >
+          </div>
+          <button
+            class="theme-toggle"
+            id="theme-toggle-btn"
+            type="button"
+            aria-label="تغییر پوسته روشن/تیره"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          </button>
+          <button
+            class="mobile-toggle"
+            id="mobile-open-btn"
+            aria-label="باز کردن منو"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-top">
+        <span class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">آبان حساب</span>
+        </span>
+        <div class="mobile-menu-actions">
+          <div class="lang-switch" role="group" aria-label="زبان / Language">
+            <a href="../en/pages/about.html" class="lang-btn" lang="en">EN</a>
+            <a href="#" class="lang-btn is-active" lang="fa" aria-current="page"
+              >FA</a
+            >
+          </div>
+          <button
+            class="mobile-close"
+            id="mobile-close-btn"
+            aria-label="بستن منو"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <ul>
+        <li><a href="../index.html" class="nav-link-mobile">خانه</a></li>
+        <li>
+          <a href="about.html" class="nav-link-mobile active">درباره ما</a>
+        </li>
+        <li><a href="services.html" class="nav-link-mobile">خدمات</a></li>
+        <li><a href="industries.html" class="nav-link-mobile">صنایع</a></li>
+        <li><a href="experience.html" class="nav-link-mobile">تجربه ما</a></li>
+        <li><a href="contact.html" class="nav-link-mobile">تماس با ما</a></li>
+      </ul>
+      <a
+        href="contact.html"
+        class="btn btn-primary"
+        style="background: var(--sky-500)"
+        >درخواست مشاوره</a
+      >
+    </div>
+
+    <!-- ================= ABOUT PAGE ================= -->
+    <main id="about-page">
+      <!-- INTRO / معرفی مؤسسه -->
+      <section class="hero page-hero">
+        <div class="container">
+          <div class="hero-copy">
+            <div class="eyebrow">درباره ما</div>
+            <h1>موسسه حسابرسی آبان حساب (حسابداران رسمی)</h1>
+            <p>
+              موسسه حسابرسی آبان حساب (حسابداران رسمی) متشکل از متخصصان و
+              کارشناسان مسلط به امور حسابرسی، حسابداری و مدیریت است و از سال
+              ۱۳۸۱ به ارائه خدمات حرفه‌ای حسابرسی، مالی، مالیاتی و مشاوره مدیریت
+              مشغول است.
+            </p>
+            <p>
+              این موسسه با تکیه بر ترکیبی از حسابداران رسمی، سرپرستان و نیروهای
+              ارشد، متخصصان دارای مدرک دکتری و کارشناسان حسابداری، خدمات حرفه‌ای
+              خود را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GOALS / اهداف -->
+      <section class="goals">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">اهداف موسسه</div>
+            <h2 class="section-title">مسیری که برای آن تلاش می‌کنیم</h2>
+            <p class="section-sub">
+              این اهداف بر پایه فعالیت مستمر موسسه از سال ۱۳۸۱ در حوزه حسابرسی،
+              مالی، مالیاتی و مدیریت تعریف شده‌اند.
+            </p>
+          </div>
+          <div class="goals-grid">
+            <div class="goal-card">
+              <div class="goal-num">۰۱</div>
+              <p>
+                تبدیل شدن به گزینه اول شرکت‌های ایرانی و بین‌المللی برای ارائه
+                خدمات حرفه‌ای.
+              </p>
+            </div>
+            <div class="goal-card">
+              <div class="goal-num">۰۲</div>
+              <p>
+                تبدیل شدن به گزینه اول نیروهای متخصص حسابداری، حسابرسی، مالی و
+                مدیریت برای همکاری با یک موسسه حسابرسی.
+              </p>
+            </div>
+            <div class="goal-card">
+              <div class="goal-num">۰۳</div>
+              <p>
+                موسسه پیشرو در ارائه خدمات نوین حسابرسی، مالی، مالیاتی و مدیریت
+                در داخل و خارج از ایران.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALUES / ارزش‌ها -->
+      <section class="values">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">ارزش‌ها</div>
+            <h2 class="section-title">ارزش‌هایی که مسیر ما را شکل می‌دهند</h2>
+          </div>
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-mark">۰۱</div>
+              <p>ما به کار خود عشق می‌ورزیم.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-mark">۰۲</div>
+              <p>
+                ما برای کسب رضایت مشتریان فراتر از تعهدات و مسئولیت‌های خود قدم
+                برمی‌داریم.
+              </p>
+            </div>
+            <div class="value-item">
+              <div class="value-mark">۰۳</div>
+              <p>ما به انجام آنچه تعهد می‌کنیم پایبندیم.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-mark">۰۴</div>
+              <p>اعتقاد ما این است که «ما می‌توانیم».</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HISTORY / تاریخچه -->
+      <section class="history" style="background: var(--bg-elevated)">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">تاریخچه</div>
+            <h2 class="section-title">مسیر رشد موسسه</h2>
+            <p class="section-sub">
+              از تأسیس در سال ۱۳۸۱ تا ادغام با سامان پندار در سال ۱۳۹۷ و انفکاک
+              از آن در سال ۱۴۰۱، موسسه مسیر رشد خود را ادامه داده است.
+            </p>
+          </div>
+          <div class="timeline-grid">
+            <div class="timeline-item">
+              <div class="timeline-year">۱۳۸۱</div>
+              <p>تأسیس موسسه حسابرسی آبان حساب.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">۱۳۹۷</div>
+              <p>ادغام موسسه با سامان پندار.</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">۱۴۰۱</div>
+              <p>انفکاک موسسه از سامان پندار.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORKFORCE STATS / آمار نیروی انسانی -->
+      <section>
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">آمار نیروی انسانی</div>
+            <h2 class="section-title">ترکیب تخصصی نیروی انسانی</h2>
+            <p class="section-sub">
+              نیروی انسانی موسسه شامل ۳۴ نفر کارکنان است که از این میان ۸ نفر
+              حسابدار رسمی، ۱۰ نفر سرپرست و نیروی ارشد، ۲ نفر دارای مدرک دکتری و
+              ۱۴ نفر کارشناس و کارشناس ارشد حسابداری هستند.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="stats stats-5" style="padding: 0 0 96px">
+        <div class="container">
+          <div class="stat-item">
+            <div class="stat-num">۳۴</div>
+            <div class="stat-label">نفر کارکنان</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">۸</div>
+            <div class="stat-label">حسابدار رسمی</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">۱۰</div>
+            <div class="stat-label">سرپرست و نیروی ارشد</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">۲</div>
+            <div class="stat-label">نفر دارای مدرک دکتری</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">۱۴</div>
+            <div class="stat-label">کارشناس و کارشناس ارشد حسابداری</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MANAGEMENT / مدیریت و تخصص حرفه‌ای -->
+      <section class="management">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">مدیریت</div>
+            <h2 class="section-title">تیم راهبری</h2>
+            <p class="section-sub">
+              راهبری حرفه‌ای موسسه بر عهده شرکا و مدیران فنی است.
+            </p>
+            <a href="team.html" class="btn-arrow" style="margin-top: 8px">
+              مشاهده کامل تیم راهبری
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path
+                  d="M14 6l-6 6 6 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="management-grid">
+            <div class="member-card">
+              <div class="member-avatar has-photo">
+                <img src="../assets/images/team/hassan-hassanzadeh.jpg" alt="حسن حسن‌زاده" />
+              </div>
+              <h4>حسن حسن‌زاده</h4>
+              <span>شریک و رئیس هیئت مدیره</span>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar has-photo">
+                <img src="../assets/images/team/meysam-moslemi.jpg" alt="میثم مسلمی" />
+              </div>
+              <h4>میثم مسلمی</h4>
+              <span>شریک و مدیرعامل</span>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar has-photo">
+                <img src="../assets/images/team/farzad-bayat.jpg" alt="فرزاد بیات" />
+              </div>
+              <h4>فرزاد بیات</h4>
+              <span>شریک و نایب رئیس هیئت مدیره</span>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar has-photo">
+                <img src="../assets/images/team/elnaz-golzari.jpg" alt="الناز گلزاری" />
+              </div>
+              <h4>الناز گلزاری</h4>
+              <span>مدیر فنی</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CREDENTIALS / اعتبارهای حرفه‌ای -->
+      <section class="credentials">
+        <div class="container">
+          <div class="section-head center">
+            <div class="eyebrow">اعتبار حرفه‌ای</div>
+            <h2 class="section-title">اعتبار حرفه‌ای</h2>
+            <p class="section-sub">
+              عضویت رسمی در جامعه حسابداران رسمی ایران و سابقه عضویت در موسسات
+              معتمد سازمان بورس اوراق بهادار، بخشی از اعتبار حرفه‌ای موسسه است.
+            </p>
+          </div>
+          <div class="cred-grid">
+            <div class="cred-card">
+              <div class="cred-tag">عضویت رسمی</div>
+              <h4>عضو جامعه حسابداران رسمی ایران</h4>
+              <div class="cred-detail">کد عضویت: ۷۲۱۰۰۴</div>
+            </div>
+            <div class="cred-card">
+              <div class="cred-tag">سابقه اعتباری</div>
+              <h4>عضو موسسات معتمد سازمان بورس اوراق بهادار با رتبه «الف»</h4>
+              <div class="cred-detail">تا سال ۱۳۹۷</div>
+              <div class="cred-note">
+                این مورد مربوط به وضعیت تاریخی موسسه تا سال ۱۳۹۷ است.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-mark"></span>
+              <span class="logo-text">آبان حساب</span>
+            </div>
+            <p>
+              موسسه حسابرسی آبان حساب (حسابداران رسمی) — ارائه خدمات حرفه‌ای
+              حسابرسی، مالی و مشاوره مدیریت از سال ۱۳۸۱.
+            </p>
+          </div>
+          <div>
+            <h5>دسترسی سریع</h5>
+            <ul>
+              <li><a href="about.html">درباره ما</a></li>
+              <li><a href="services.html">خدمات</a></li>
+              <li><a href="industries.html">صنایع</a></li>
+              <li><a href="experience.html">تجربه ما</a></li>
+              <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>خدمات</h5>
+            <ul>
+              <li><a href="services.html">حسابرسی</a></li>
+              <li><a href="services.html">مالی، حسابداری و مالیاتی</a></li>
+              <li><a href="services.html">مشاوره و خدمات حرفه‌ای</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>تماس</h5>
+            <div class="footer-contact-note">
+              تهران، پاسداران، خیابان گل‌نبی، بعد از ناطق نوری، پلاک ۴۱، واحد ۸
+            </div>
+            <div class="footer-contact-note">
+              <a href="tel:02126712860">۰۲۱-۲۶۷۱۲۸۶۰</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© موسسه حسابرسی آبان حساب — تمامی حقوق محفوظ است.</span>
+          <span>حسابداران رسمی</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/navigation.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/scroll-reveal.js"></script>
+    <script src="../js/smooth-scroll.js"></script>
+    <script src="../js/counter.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/theme.js"></script>
+  </body>
+</html>

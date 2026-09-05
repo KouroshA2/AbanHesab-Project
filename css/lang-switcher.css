@@ -1,0 +1,84 @@
+/* =========================================================
+   Stage 19 — FA / EN Language Switcher
+   Isolated, additive stylesheet: loaded after style.css.
+   Does not modify any existing rule in style.css.
+   ========================================================= */
+
+/* ---------- Language switcher pill (Header + Mobile menu) ---------- */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--toggle-border);
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+.lang-switch a {
+  padding: 5px 12px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-secondary);
+  border-radius: 16px;
+  transition: all 0.3s var(--ease);
+}
+.lang-switch a.is-active {
+  background: var(--toggle-hover-bg);
+  color: var(--text-heading);
+}
+.lang-switch a:not(.is-active):hover {
+  color: var(--text-heading);
+  background: var(--toggle-bg);
+}
+
+/* Header (transparent over Hero, or scrolled) and Mobile menu both
+   follow the deep-surface theme tokens, so this pill needs no
+   surface-specific override. */
+.mobile-menu-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.mobile-menu .lang-switch a {
+  font-size: 13px;
+  padding: 6px 13px;
+}
+
+@media (max-width: 380px) {
+  .lang-switch a {
+    padding: 4px 9px;
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   LTR (English) support
+   The base stylesheet hardcodes body{direction:rtl}. English
+   pages set <html lang="en" dir="ltr">, so mirror the layout
+   here without touching the Persian styles.
+   ========================================================= */
+html[dir="ltr"] body {
+  direction: ltr;
+}
+
+/* Directional chevrons ("more" / "view all" arrows) should point
+   toward reading-forward (right) in LTR instead of left. */
+html[dir="ltr"] .btn-arrow svg {
+  transform: scaleX(-1);
+}
+html[dir="ltr"] .btn-arrow:hover svg {
+  transform: scaleX(-1) translateX(4px);
+}
+
+/* =========================================================
+   Stage 20 — links to English pages not built yet
+   Applied to <a> elements with no href (nav items, CTA
+   buttons) that point to an English page that doesn't exist
+   yet. No fake route is created; the element is inert.
+   ========================================================= */
+.is-soon {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}

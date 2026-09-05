@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("ah-theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دانش و دیدگاه‌های حرفه‌ای | موسسه حسابرسی آبان حساب</title>
+    <meta
+      name="description"
+      content="بخش دانش و دیدگاه‌های حرفه‌ای موسسه حسابرسی آبان حساب؛ مقالات مرتبط با حسابرسی، امور مالی، مالیاتی و مدیریت به‌زودی در این بخش منتشر می‌شود."
+    />
+    <meta
+      property="og:title"
+      content="دانش و دیدگاه‌های حرفه‌ای | موسسه حسابرسی آبان حساب"
+    />
+    <meta
+      property="og:description"
+      content="بخش دانش و دیدگاه‌های حرفه‌ای موسسه حسابرسی آبان حساب؛ مقالات مرتبط با حسابرسی، امور مالی، مالیاتی و مدیریت به‌زودی در این بخش منتشر می‌شود."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:site_name" content="موسسه حسابرسی آبان حساب" />
+    <link rel="stylesheet" href="../css/vazirmatn-local.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lang-switcher.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header id="site-header">
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">آبان حساب<small>موسسه حسابرسی</small></span>
+        </a>
+
+        <nav class="main-nav" aria-label="منوی اصلی">
+          <ul>
+            <li><a href="../index.html" class="nav-link">خانه</a></li>
+            <li><a href="about.html" class="nav-link">درباره ما</a></li>
+            <li><a href="services.html" class="nav-link">خدمات</a></li>
+            <li><a href="industries.html" class="nav-link">صنایع</a></li>
+            <li><a href="experience.html" class="nav-link">تجربه ما</a></li>
+            <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a
+            href="contact.html"
+            class="btn btn-outline"
+            style="color: #fff; border-color: rgba(255, 255, 255, 0.28)"
+            >تماس با ما</a
+          >
+          <a href="contact.html" class="btn btn-primary">درخواست مشاوره</a>
+          <div class="lang-switch" role="group" aria-label="زبان / Language">
+            <a href="../en/pages/blog.html" class="lang-btn" lang="en">EN</a>
+            <a href="#" class="lang-btn is-active" lang="fa" aria-current="page"
+              >FA</a
+            >
+          </div>
+          <button
+            class="theme-toggle"
+            id="theme-toggle-btn"
+            type="button"
+            aria-label="تغییر پوسته روشن/تیره"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          </button>
+          <button
+            class="mobile-toggle"
+            id="mobile-open-btn"
+            aria-label="باز کردن منو"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-top">
+        <span class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">آبان حساب</span>
+        </span>
+        <div class="mobile-menu-actions">
+          <div class="lang-switch" role="group" aria-label="زبان / Language">
+            <a href="../en/pages/blog.html" class="lang-btn" lang="en">EN</a>
+            <a href="#" class="lang-btn is-active" lang="fa" aria-current="page"
+              >FA</a
+            >
+          </div>
+          <button
+            class="mobile-close"
+            id="mobile-close-btn"
+            aria-label="بستن منو"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <ul>
+        <li><a href="../index.html" class="nav-link-mobile">خانه</a></li>
+        <li><a href="about.html" class="nav-link-mobile">درباره ما</a></li>
+        <li><a href="services.html" class="nav-link-mobile">خدمات</a></li>
+        <li><a href="industries.html" class="nav-link-mobile">صنایع</a></li>
+        <li><a href="experience.html" class="nav-link-mobile">تجربه ما</a></li>
+        <li><a href="contact.html" class="nav-link-mobile">تماس با ما</a></li>
+      </ul>
+      <a
+        href="contact.html"
+        class="btn btn-primary"
+        style="background: var(--sky-500)"
+        >درخواست مشاوره</a
+      >
+    </div>
+
+    <!-- ================= BLOG PAGE ================= -->
+    <main id="blog-page">
+      <!-- HERO -->
+      <section class="hero page-hero">
+        <div class="container">
+          <div class="hero-copy">
+            <div class="eyebrow">دانش و دیدگاه‌ها</div>
+            <h1>دانش و دیدگاه‌های حرفه‌ای</h1>
+            <p>
+              این بخش به انتشار مطالب حرفه‌ای موسسه حسابرسی آبان حساب اختصاص
+              خواهد یافت و محتوای آن در آینده منتشر می‌شود.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EMPTY STATE -->
+      <section>
+        <div class="container">
+          <div class="empty-state">
+            <h3>محتوای این بخش به‌زودی منتشر خواهد شد.</h3>
+            <p>
+              مقالات و مطالب حرفه‌ای مرتبط با حسابرسی، امور مالی، مالیاتی و
+              مدیریت پس از آماده‌سازی در این بخش قرار خواهند گرفت.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="final-cta">
+        <div class="container">
+          <h2>آشنایی با خدمات آبان حساب</h2>
+          <div class="hero-actions">
+            <a
+              href="services.html"
+              class="btn btn-primary"
+              style="background: var(--sky-500)"
+              >آشنایی با خدمات آبان حساب</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-mark"></span>
+              <span class="logo-text">آبان حساب</span>
+            </div>
+            <p>
+              موسسه حسابرسی آبان حساب (حسابداران رسمی) — ارائه خدمات حرفه‌ای
+              حسابرسی، مالی و مشاوره مدیریت از سال ۱۳۸۱.
+            </p>
+          </div>
+          <div>
+            <h5>دسترسی سریع</h5>
+            <ul>
+              <li><a href="about.html">درباره ما</a></li>
+              <li><a href="services.html">خدمات</a></li>
+              <li><a href="industries.html">صنایع</a></li>
+              <li><a href="experience.html">تجربه ما</a></li>
+              <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>خدمات</h5>
+            <ul>
+              <li><a href="services.html">حسابرسی</a></li>
+              <li><a href="services.html">مالی، حسابداری و مالیاتی</a></li>
+              <li><a href="services.html">سایر خدمات حرفه‌ای</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>تماس</h5>
+            <div class="footer-contact-note">
+              تهران، پاسداران، خیابان گل‌نبی، بعد از ناطق نوری، پلاک ۴۱، واحد ۸
+            </div>
+            <div class="footer-contact-note">
+              <a href="tel:02126712860">۰۲۱-۲۶۷۱۲۸۶۰</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© موسسه حسابرسی آبان حساب — تمامی حقوق محفوظ است.</span>
+          <span>حسابداران رسمی</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/navigation.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/scroll-reveal.js"></script>
+    <script src="../js/smooth-scroll.js"></script>
+    <script src="../js/counter.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/theme.js"></script>
+  </body>
+</html>

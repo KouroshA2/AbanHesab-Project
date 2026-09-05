@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("ah-theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Aban Hesab Audit Institute</title>
+    <meta
+      name="description"
+      content="Ways to contact Aban Hesab Audit Institute, including the office address in Tehran, Pasdaran, phone number, and a contact form to request a consultation."
+    />
+    <meta
+      property="og:title"
+      content="Contact Us | Aban Hesab Audit Institute"
+    />
+    <meta
+      property="og:description"
+      content="Ways to contact Aban Hesab Audit Institute, including the office address in Tehran, Pasdaran, phone number, and a contact form to request a consultation."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Aban Hesab Audit Institute" />
+    <link rel="alternate" hreflang="fa" href="../../pages/contact.html" />
+    <link rel="alternate" hreflang="en" href="contact.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/lang-switcher.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header id="site-header">
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text"
+            >Aban Hesab<small>Audit Institute</small></span
+          >
+        </a>
+
+        <nav class="main-nav" aria-label="Main menu">
+          <ul>
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="industries.html" class="nav-link">Industries</a></li>
+            <li>
+              <a href="experience.html" class="nav-link">Our Experience</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link active">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a
+            href="tel:02126712860"
+            class="btn btn-outline"
+            style="color: #fff; border-color: rgba(255, 255, 255, 0.28)"
+            >021-26712860</a
+          >
+          <a href="#contact-form" class="btn btn-primary"
+            >Request Consultation</a
+          >
+          <div class="lang-switch" role="group" aria-label="Language / زبان">
+            <a
+              href="contact.html"
+              class="lang-btn is-active"
+              lang="en"
+              aria-current="page"
+              >EN</a
+            >
+            <a href="../../pages/contact.html" class="lang-btn" lang="fa">FA</a>
+          </div>
+          <button
+            class="theme-toggle"
+            id="theme-toggle-btn"
+            type="button"
+            aria-label="Toggle light/dark theme"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          </button>
+          <button
+            class="mobile-toggle"
+            id="mobile-open-btn"
+            aria-label="Open menu"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-top">
+        <span class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">Aban Hesab</span>
+        </span>
+        <div class="mobile-menu-actions">
+          <div class="lang-switch" role="group" aria-label="Language / زبان">
+            <a
+              href="contact.html"
+              class="lang-btn is-active"
+              lang="en"
+              aria-current="page"
+              >EN</a
+            >
+            <a href="../../pages/contact.html" class="lang-btn" lang="fa">FA</a>
+          </div>
+          <button
+            class="mobile-close"
+            id="mobile-close-btn"
+            aria-label="Close menu"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <ul>
+        <li><a href="../index.html" class="nav-link-mobile">Home</a></li>
+        <li><a href="about.html" class="nav-link-mobile">About Us</a></li>
+        <li><a href="services.html" class="nav-link-mobile">Services</a></li>
+        <li>
+          <a href="industries.html" class="nav-link-mobile">Industries</a>
+        </li>
+        <li>
+          <a href="experience.html" class="nav-link-mobile">Our Experience</a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link-mobile active">Contact Us</a>
+        </li>
+      </ul>
+      <a
+        href="#contact-form"
+        class="btn btn-primary"
+        style="background: var(--sky-500)"
+        >Request Consultation</a
+      >
+    </div>
+
+    <!-- ================= CONTACT PAGE ================= -->
+    <main id="contact-page">
+      <!-- HERO -->
+      <section class="hero page-hero">
+        <div class="container">
+          <div class="hero-copy">
+            <div class="eyebrow">Contact Us</div>
+            <h1>Get in Touch With Aban Hesab</h1>
+            <p>
+              To discuss your professional needs, request a consultation, or
+              schedule a meeting, reach Aban Hesab Audit Institute through the
+              information below or the contact form.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ADDRESS / PHONE -->
+      <section>
+        <div class="container">
+          <div class="contact-info-grid">
+            <div class="contact-info-card">
+              <div class="cred-tag">Address</div>
+              <h4>Institute Office</h4>
+              <p>
+                Tehran, Pasdaran, Gol-Nabi St., after Nategh Nouri, No. 41, Unit
+                8
+              </p>
+            </div>
+            <div class="contact-info-card">
+              <div class="cred-tag">Phone</div>
+              <h4>Phone Contact</h4>
+              <p><a href="tel:02126712860">021-26712860</a></p>
+            </div>
+          </div>
+
+          <!-- CONTACT FORM -->
+          <div class="section-head center">
+            <div class="eyebrow">Contact Form</div>
+            <h2 class="section-title">Send Us a Message</h2>
+          </div>
+          <form class="contact-form" id="contact-form" onsubmit="return false;">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-name">Name</label>
+                <input
+                  type="text"
+                  id="cf-name"
+                  name="name"
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-field">
+                <label for="cf-company">Company Name</label>
+                <input
+                  type="text"
+                  id="cf-company"
+                  name="company"
+                  autocomplete="organization"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="cf-phone"
+                  name="phone"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="form-field">
+                <label for="cf-email">Email</label>
+                <input
+                  type="email"
+                  id="cf-email"
+                  name="email"
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="cf-service">Service of Interest</label>
+              <select id="cf-service" name="service">
+                <option value="">Select an option</option>
+                <option value="Audit">Audit</option>
+                <option value="Financial, Accounting & Tax Services">
+                  Financial, Accounting &amp; Tax Services
+                </option>
+                <option value="Other Professional Services">
+                  Other Professional Services
+                </option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-note">
+              This form is currently for demonstration purposes only; messages
+              are not sent or stored.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-mark"></span>
+              <span class="logo-text">Aban Hesab</span>
+            </div>
+            <p>
+              Aban Hesab Audit Institute (Certified Public Accountants) —
+              providing professional audit, financial and management consulting
+              services since 1381.
+            </p>
+          </div>
+          <div>
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="industries.html">Industries</a></li>
+              <li><a href="experience.html">Our Experience</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Services</h5>
+            <ul>
+              <li><a href="services.html">Audit</a></li>
+              <li>
+                <a href="services.html">Financial, Accounting &amp; Tax</a>
+              </li>
+              <li><a href="services.html">Other Professional Services</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Contact</h5>
+            <div class="footer-contact-note">
+              Tehran, Pasdaran, Gol-Nabi St., after Nategh Nouri, No. 41, Unit 8
+            </div>
+            <div class="footer-contact-note">
+              <a href="tel:02126712860">021-26712860</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© Aban Hesab Audit Institute — All rights reserved.</span>
+          <span>Certified Public Accountants</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Contact form is frontend-only: no submit handler, no backend, no external service. -->
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/scroll-reveal.js"></script>
+    <script src="../../js/smooth-scroll.js"></script>
+    <script src="../../js/counter.js"></script>
+    <script src="../../js/animations.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/theme.js"></script>
+  </body>
+</html>

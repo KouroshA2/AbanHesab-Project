@@ -1,0 +1,56 @@
+{
+  "team": [
+    {
+      "id": "person-1",
+      "slug": "partners",
+      "name": {
+        "fa": "حسن حسن‌زاده",
+        "en": "Hassan Hassanzadeh"
+      },
+      "role": {
+        "fa": "شریک و رئیس هیئت مدیره",
+        "en": "Partner & Chairman of the Board"
+      },
+      "image": "assets/images/team/hassan-hassanzadeh.jpg"
+    },
+    {
+      "id": "person-2",
+      "slug": "partners",
+      "name": {
+        "fa": "میثم مسلمی",
+        "en": "Meysam Moslemi"
+      },
+      "role": {
+        "fa": "شریک و مدیرعامل",
+        "en": "Partner & CEO"
+      },
+      "image": "assets/images/team/meysam-moslemi.jpg"
+    },
+    {
+      "id": "person-3",
+      "slug": "partners",
+      "name": {
+        "fa": "فرزاد بیات",
+        "en": "Farzad Bayat"
+      },
+      "role": {
+        "fa": "شریک و نایب رئیس هیئت مدیره",
+        "en": "Partner & Vice Chairman of the Board"
+      },
+      "image": "assets/images/team/farzad-bayat.jpg"
+    },
+    {
+      "id": "person-4",
+      "slug": "managers",
+      "name": {
+        "fa": "الناز گلزاری",
+        "en": "Elnaz Golzari"
+      },
+      "role": {
+        "fa": "مدیر فنی",
+        "en": "Technical Manager"
+      },
+      "image": "assets/images/team/elnaz-golzari.jpg"
+    }
+  ]
+}

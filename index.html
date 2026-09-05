@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("ah-theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موسسه حسابرسی آبان حساب | حسابداران رسمی</title>
+    <meta
+      name="description"
+      content="موسسه حسابرسی آبان حساب (حسابداران رسمی) از سال ۱۳۸۱ خدمات حرفه‌ای حسابرسی، مالی، حسابداری، مالیاتی و مشاوره مدیریت را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد."
+    />
+    <meta
+      property="og:title"
+      content="موسسه حسابرسی آبان حساب | حسابداران رسمی"
+    />
+    <meta
+      property="og:description"
+      content="موسسه حسابرسی آبان حساب (حسابداران رسمی) از سال ۱۳۸۱ خدمات حرفه‌ای حسابرسی، مالی، حسابداری، مالیاتی و مشاوره مدیریت را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:site_name" content="موسسه حسابرسی آبان حساب" />
+    <link rel="stylesheet" href="css/vazirmatn-local.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lang-switcher.css" />
+    <link rel="alternate" hreflang="fa" href="index.html" />
+    <link rel="alternate" hreflang="en" href="en/index.html" />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header id="site-header">
+      <div class="container">
+        <a href="#/" class="logo" data-route="">
+          <span class="logo-mark"></span>
+          <span class="logo-text">آبان حساب<small>موسسه حسابرسی</small></span>
+        </a>
+
+        <nav class="main-nav" aria-label="منوی اصلی">
+          <ul>
+            <li><a href="#/" data-route="" class="nav-link">خانه</a></li>
+            <li>
+              <a href="pages/about.html" data-route="about" class="nav-link"
+                >درباره ما</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/services.html"
+                data-route="services"
+                class="nav-link"
+                >خدمات</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/industries.html"
+                data-route="industries"
+                class="nav-link"
+                >صنایع</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/experience.html"
+                data-route="experience"
+                class="nav-link"
+                >تجربه ما</a
+              >
+            </li>
+            <li>
+              <a href="pages/contact.html" data-route="contact" class="nav-link"
+                >تماس با ما</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a
+            href="pages/contact.html"
+            data-route="contact"
+            class="btn btn-outline"
+            style="color: #fff; border-color: rgba(255, 255, 255, 0.28)"
+            >تماس با ما</a
+          >
+          <a
+            href="pages/contact.html"
+            data-route="contact"
+            class="btn btn-primary"
+            >درخواست مشاوره</a
+          >
+          <div class="lang-switch" role="group" aria-label="زبان / Language">
+            <a href="en/index.html" class="lang-btn" lang="en">EN</a>
+            <a
+              href="#/"
+              class="lang-btn is-active"
+              lang="fa"
+              aria-current="page"
+              >FA</a
+            >
+          </div>
+          <button
+            class="theme-toggle"
+            id="theme-toggle-btn"
+            type="button"
+            aria-label="تغییر پوسته روشن/تیره"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          </button>
+          <button
+            class="mobile-toggle"
+            id="mobile-open-btn"
+            aria-label="باز کردن منو"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-top">
+        <span class="logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">آبان حساب</span>
+        </span>
+        <div class="mobile-menu-actions">
+          <div class="lang-switch" role="group" aria-label="زبان / Language">
+            <a href="en/index.html" class="lang-btn" lang="en">EN</a>
+            <a
+              href="#/"
+              class="lang-btn is-active"
+              lang="fa"
+              aria-current="page"
+              >FA</a
+            >
+          </div>
+          <button
+            class="mobile-close"
+            id="mobile-close-btn"
+            aria-label="بستن منو"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <ul>
+        <li><a href="#/" data-route="" class="nav-link-mobile">خانه</a></li>
+        <li>
+          <a href="pages/about.html" data-route="about" class="nav-link-mobile"
+            >درباره ما</a
+          >
+        </li>
+        <li>
+          <a
+            href="pages/services.html"
+            data-route="services"
+            class="nav-link-mobile"
+            >خدمات</a
+          >
+        </li>
+        <li>
+          <a
+            href="pages/industries.html"
+            data-route="industries"
+            class="nav-link-mobile"
+            >صنایع</a
+          >
+        </li>
+        <li>
+          <a
+            href="pages/experience.html"
+            data-route="experience"
+            class="nav-link-mobile"
+            >تجربه ما</a
+          >
+        </li>
+        <li>
+          <a
+            href="pages/contact.html"
+            data-route="contact"
+            class="nav-link-mobile"
+            >تماس با ما</a
+          >
+        </li>
+      </ul>
+      <a
+        href="pages/contact.html"
+        data-route="contact"
+        class="btn btn-primary"
+        style="background: var(--sky-500)"
+        >درخواست مشاوره</a
+      >
+    </div>
+
+    <!-- ================= HOME PAGE ================= -->
+    <main id="home-page">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-copy">
+            <div class="eyebrow" style="justify-content: flex-start">
+              از سال ۱۳۸۱
+            </div>
+            <h1>راهکارهای حرفه‌ای در حسابرسی، مالی و مدیریت</h1>
+            <p>
+              ارائه خدمات حرفه‌ای حسابرسی، مالی، مالیاتی و مشاوره مدیریت با
+              پشتوانه تجربه و تخصص حرفه‌ای.
+            </p>
+            <div class="hero-actions">
+              <a
+                href="pages/services.html"
+                data-route="services"
+                class="btn btn-primary"
+                style="background: var(--sky-500)"
+                >آشنایی با خدمات</a
+              >
+              <a
+                href="pages/about.html"
+                data-route="about"
+                class="btn btn-ghost-light"
+                >درباره آبان حساب</a
+              >
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <svg viewBox="0 0 480 420" fill="none">
+              <!-- fine grid -->
+              <g stroke="rgba(255,255,255,.08)" stroke-width="1">
+                <line x1="0" y1="60" x2="480" y2="60" />
+                <line x1="0" y1="140" x2="480" y2="140" />
+                <line x1="0" y1="220" x2="480" y2="220" />
+                <line x1="0" y1="300" x2="480" y2="300" />
+                <line x1="0" y1="380" x2="480" y2="380" />
+                <line x1="80" y1="0" x2="80" y2="420" />
+                <line x1="200" y1="0" x2="200" y2="420" />
+                <line x1="320" y1="0" x2="320" y2="420" />
+                <line x1="400" y1="0" x2="400" y2="420" />
+              </g>
+              <!-- connecting ledger lines -->
+              <polyline
+                class="draw-line"
+                points="40,340 140,260 220,290 300,150 420,110"
+                stroke="#4E8FC7"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <polyline
+                class="draw-line"
+                points="60,120 160,180 260,90 360,200 440,170"
+                stroke="rgba(123,174,218,.5)"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="animation-delay: 0.3s"
+              />
+              <!-- nodes -->
+              <circle
+                class="fade-node"
+                cx="40"
+                cy="340"
+                r="4"
+                fill="#4E8FC7"
+                style="animation-delay: 1.6s"
+              />
+              <circle
+                class="fade-node"
+                cx="140"
+                cy="260"
+                r="4"
+                fill="#4E8FC7"
+                style="animation-delay: 1.7s"
+              />
+              <circle
+                class="fade-node"
+                cx="220"
+                cy="290"
+                r="4"
+                fill="#4E8FC7"
+                style="animation-delay: 1.8s"
+              />
+              <circle
+                class="fade-node"
+                cx="300"
+                cy="150"
+                r="4"
+                fill="#4E8FC7"
+                style="animation-delay: 1.9s"
+              />
+              <circle
+                class="fade-node"
+                cx="420"
+                cy="110"
+                r="6"
+                fill="#0B1626"
+                stroke="#7BAEDA"
+                stroke-width="1.6"
+                style="animation-delay: 2s"
+              />
+              <!-- frame mark -->
+              <rect
+                x="360"
+                y="60"
+                width="90"
+                height="90"
+                fill="none"
+                stroke="rgba(123,174,218,.35)"
+                stroke-width="1"
+              />
+              <rect
+                x="378"
+                y="78"
+                width="54"
+                height="54"
+                fill="none"
+                stroke="rgba(123,174,218,.5)"
+                stroke-width="1"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats">
+        <div class="container">
+          <div class="stat-item reveal">
+            <div class="stat-num" data-static="۱۳۸۱">۱۳۸۱</div>
+            <div class="stat-label">سال تأسیس</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-num" data-count="34">۰</div>
+            <div class="stat-label">نفر نیروی متخصص</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-num" data-count="16">۰</div>
+            <div class="stat-label">حوزه فعالیت</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-num" data-count="5">۰</div>
+            <div class="stat-label">مدیر و متخصص کلیدی</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about">
+        <div class="container">
+          <div class="about-copy reveal">
+            <div class="eyebrow">درباره آبان حساب</div>
+            <h2 class="section-title">تخصص در حسابرسی، حسابداری و مدیریت</h2>
+            <p>
+              موسسه حسابرسی آبان حساب (حسابداران رسمی) متشکل از متخصصان و
+              کارشناسان مسلط به امور حسابرسی، حسابداری و مدیریت است.
+            </p>
+            <p>
+              این موسسه در سال ۱۳۸۱ برای ارائه خدمات حرفه‌ای و مشاوره‌های مالی و
+              حسابداری تأسیس شده است.
+            </p>
+            <p>
+              این موسسه با تکیه بر ترکیبی از حسابداران رسمی، سرپرستان و نیروهای
+              ارشد، متخصصان دارای مدرک دکتری و کارشناسان حسابداری، خدمات حرفه‌ای
+              خود را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد.
+            </p>
+            <a href="pages/about.html" data-route="about" class="btn-arrow">
+              بیشتر درباره ما
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path
+                  d="M14 6l-6 6 6 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="about-visual reveal">
+            <svg class="grid-lines" viewBox="0 0 400 340" fill="none">
+              <g stroke="rgba(255,255,255,.06)" stroke-width="1">
+                <line x1="0" y1="85" x2="400" y2="85" />
+                <line x1="0" y1="170" x2="400" y2="170" />
+                <line x1="0" y1="255" x2="400" y2="255" />
+                <line x1="100" y1="0" x2="100" y2="340" />
+                <line x1="200" y1="0" x2="200" y2="340" />
+                <line x1="300" y1="0" x2="300" y2="340" />
+              </g>
+            </svg>
+            <div class="since">از سال ۱۳۸۱</div>
+            <div class="since-label">فعالیت مستمر در ارائه خدمات حرفه‌ای</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GOALS -->
+      <section class="goals">
+        <div class="container">
+          <div class="section-head center reveal">
+            <div class="eyebrow">اهداف موسسه</div>
+            <h2 class="section-title">مسیری که برای آن تلاش می‌کنیم</h2>
+          </div>
+          <div class="goals-grid reveal">
+            <div class="goal-card">
+              <div class="goal-num">۰۱</div>
+              <p>
+                تبدیل شدن به گزینه اول شرکت‌های ایرانی و بین‌المللی برای ارائه
+                خدمات حرفه‌ای.
+              </p>
+            </div>
+            <div class="goal-card">
+              <div class="goal-num">۰۲</div>
+              <p>
+                تبدیل شدن به گزینه اول نیروهای متخصص حسابداری، حسابرسی، مالی و
+                مدیریت برای همکاری با یک موسسه حسابرسی.
+              </p>
+            </div>
+            <div class="goal-card">
+              <div class="goal-num">۰۳</div>
+              <p>
+                موسسه پیشرو در ارائه خدمات نوین حسابرسی، مالی، مالیاتی و مدیریت
+                در داخل و خارج از ایران.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="services" id="services-preview">
+        <div class="container">
+          <div class="section-head center reveal">
+            <div class="eyebrow">خدمات</div>
+            <h2 class="section-title">خدمات حرفه‌ای</h2>
+            <p class="section-sub">
+              بخشی از خدمات موسسه در سه حوزه اصلی حسابرسی، امور مالی و مشاوره
+              حرفه‌ای.
+            </p>
+          </div>
+          <div class="services-grid reveal">
+            <div class="service-card">
+              <div class="service-index">۰۱</div>
+              <h3>حسابرسی</h3>
+              <p
+                style="
+                  font-size: 14.5px;
+                  color: var(--text-secondary);
+                  margin-bottom: 18px;
+                "
+              >
+                طیفی از خدمات حسابرسی مالی، داخلی، عملیاتی و ویژه، همراه با
+                ارزیابی و قیمت‌گذاری سهام.
+              </p>
+              <ul>
+                <li>حسابرسی مالی</li>
+                <li>حسابرسی داخلی و عملیاتی</li>
+                <li>حسابرسی ویژه</li>
+                <li>ارزیابی و قیمت‌گذاری سهام</li>
+              </ul>
+            </div>
+            <div class="service-card">
+              <div class="service-index">۰۲</div>
+              <h3>مالی، حسابداری و مالیاتی</h3>
+              <p
+                style="
+                  font-size: 14.5px;
+                  color: var(--text-secondary);
+                  margin-bottom: 18px;
+                "
+              >
+                خدمات مالیاتی، حسابداری و دفترداری، تهیه صورت‌های مالی و طراحی
+                سیستم‌های مالی.
+              </p>
+              <ul>
+                <li>خدمات مالیاتی</li>
+                <li>خدمات حسابداری و دفترداری</li>
+                <li>تهیه صورت‌های مالی</li>
+                <li>طراحی سیستم‌های مالی</li>
+              </ul>
+            </div>
+            <div class="service-card">
+              <div class="service-index">۰۳</div>
+              <h3>مشاوره و خدمات حرفه‌ای</h3>
+              <p
+                style="
+                  font-size: 14.5px;
+                  color: var(--text-secondary);
+                  margin-bottom: 18px;
+                "
+              >
+                مشاوره مدیریت مالی، طراحی سیستم مالی، تهیه طرح‌های توجیهی فنی
+                اقتصادی و نظارت بر امور تصفیه.
+              </p>
+              <ul>
+                <li>مشاوره مدیریت مالی</li>
+                <li>طراحی سیستم مالی</li>
+                <li>طرح‌های توجیهی فنی اقتصادی</li>
+                <li>نظارت بر امور تصفیه</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-footer-action reveal">
+            <a
+              href="pages/services.html"
+              data-route="services"
+              class="btn btn-outline"
+              >مشاهده همه خدمات</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- INDUSTRIES -->
+      <section class="industries" id="industries-preview">
+        <div class="container">
+          <div class="section-head center reveal">
+            <div class="eyebrow">صنایع</div>
+            <h2 class="section-title">تجربه در صنایع مختلف</h2>
+            <p class="section-sub">
+              تجربه حرفه‌ای موسسه در طیف متنوعی از صنایع و حوزه‌های اقتصادی، در
+              قالب ۱۶ حوزه فعالیت مستند در رزومه موسسه.
+            </p>
+          </div>
+          <div class="industries-grid reveal" id="industries-grid"></div>
+          <div class="section-footer-action reveal">
+            <a
+              href="pages/industries.html"
+              data-route="industries"
+              class="btn-arrow btn-ghost-line"
+            >
+              مشاهده حوزه‌های فعالیت
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path
+                  d="M14 6l-6 6 6 6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALUES -->
+      <section class="values">
+        <div class="container">
+          <div class="section-head center reveal">
+            <div class="eyebrow">ارزش‌ها</div>
+            <h2 class="section-title">ارزش‌هایی که مسیر ما را شکل می‌دهند</h2>
+          </div>
+          <div class="values-grid reveal">
+            <div class="value-item">
+              <div class="value-mark">۰۱</div>
+              <p>ما به کار خود عشق می‌ورزیم.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-mark">۰۲</div>
+              <p>
+                ما برای کسب رضایت مشتریان فراتر از تعهدات و مسئولیت‌های خود قدم
+                برمی‌داریم.
+              </p>
+            </div>
+            <div class="value-item">
+              <div class="value-mark">۰۳</div>
+              <p>ما به انجام آنچه تعهد می‌کنیم پایبندیم.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-mark">۰۴</div>
+              <p>اعتقاد ما این است که «ما می‌توانیم».</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CREDENTIALS -->
+      <section class="credentials">
+        <div class="container">
+          <div class="section-head center reveal">
+            <div class="eyebrow">اعتبار حرفه‌ای</div>
+            <h2 class="section-title">اعتبار حرفه‌ای</h2>
+            <p class="section-sub">
+              عضویت رسمی در جامعه حسابداران رسمی ایران و سابقه عضویت در موسسات
+              معتمد سازمان بورس اوراق بهادار، بخشی از اعتبار حرفه‌ای موسسه است.
+            </p>
+          </div>
+          <div class="cred-grid reveal">
+            <div class="cred-card">
+              <div class="cred-tag">عضویت رسمی</div>
+              <h4>عضو جامعه حسابداران رسمی ایران</h4>
+              <div class="cred-detail">کد عضویت: ۷۲۱۰۰۴</div>
+            </div>
+            <div class="cred-card">
+              <div class="cred-tag">سابقه اعتباری</div>
+              <h4>عضو موسسات معتمد سازمان بورس اوراق بهادار با رتبه «الف»</h4>
+              <div class="cred-detail">تا سال ۱۳۹۷</div>
+              <div class="cred-note">
+                این مورد مربوط به وضعیت تاریخی موسسه تا سال ۱۳۹۷ است.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MANAGEMENT -->
+      <section class="management">
+        <div class="container">
+          <div class="section-head center reveal">
+            <div class="eyebrow">مدیریت</div>
+            <h2 class="section-title">تیم راهبری</h2>
+          </div>
+          <div class="management-grid reveal">
+            <div class="member-card">
+              <div class="member-avatar has-photo">
+                <img src="assets/images/team/hassan-hassanzadeh.jpg" alt="حسن حسن‌زاده" />
+              </div>
+              <h4>حسن حسن‌زاده</h4>
+              <span>شریک و رئیس هیئت مدیره</span>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar has-photo">
+                <img src="assets/images/team/meysam-moslemi.jpg" alt="میثم مسلمی" />
+              </div>
+              <h4>میثم مسلمی</h4>
+              <span>شریک و مدیرعامل</span>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar has-photo">
+                <img src="assets/images/team/farzad-bayat.jpg" alt="فرزاد بیات" />
+              </div>
+              <h4>فرزاد بیات</h4>
+              <span>شریک و نایب رئیس هیئت مدیره</span>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar has-photo">
+                <img src="assets/images/team/elnaz-golzari.jpg" alt="الناز گلزاری" />
+              </div>
+              <h4>الناز گلزاری</h4>
+              <span>مدیر فنی</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="final-cta">
+        <div class="container reveal">
+          <h2>برای نیاز حرفه‌ای خود با ما در ارتباط باشید</h2>
+          <div class="hero-actions">
+            <a
+              href="pages/contact.html"
+              data-route="contact"
+              class="btn btn-primary"
+              style="background: var(--sky-500)"
+              >درخواست مشاوره</a
+            >
+            <a
+              href="pages/contact.html"
+              data-route="contact"
+              class="btn btn-ghost-light"
+              >تماس با ما</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= PLACEHOLDER PAGE (future routes) ================= -->
+    <main class="placeholder-page" id="placeholder-page" hidden>
+      <div>
+        <div class="eyebrow" id="placeholder-eyebrow">در حال توسعه</div>
+        <h1 id="placeholder-title">این بخش به‌زودی تکمیل می‌شود</h1>
+        <p id="placeholder-text">
+          این صفحه در مرحله بعدی توسعه وب‌سایت آماده خواهد شد.
+        </p>
+        <a href="#/" data-route="" class="btn btn-ghost-light"
+          >بازگشت به خانه</a
+        >
+      </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-mark"></span>
+              <span class="logo-text">آبان حساب</span>
+            </div>
+            <p>
+              موسسه حسابرسی آبان حساب (حسابداران رسمی) — ارائه خدمات حرفه‌ای
+              حسابرسی، مالی و مشاوره مدیریت از سال ۱۳۸۱.
+            </p>
+          </div>
+          <div>
+            <h5>دسترسی سریع</h5>
+            <ul>
+              <li>
+                <a href="pages/about.html" data-route="about">درباره ما</a>
+              </li>
+              <li>
+                <a href="pages/services.html" data-route="services">خدمات</a>
+              </li>
+              <li>
+                <a href="pages/industries.html" data-route="industries"
+                  >صنایع</a
+                >
+              </li>
+              <li>
+                <a href="pages/experience.html" data-route="experience"
+                  >تجربه ما</a
+                >
+              </li>
+              <li>
+                <a href="pages/contact.html" data-route="contact">تماس با ما</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5>خدمات</h5>
+            <ul>
+              <li>
+                <a href="pages/services.html" data-route="services">حسابرسی</a>
+              </li>
+              <li>
+                <a href="pages/services.html" data-route="services"
+                  >مالی، حسابداری و مالیاتی</a
+                >
+              </li>
+              <li>
+                <a href="pages/services.html" data-route="services"
+                  >مشاوره و خدمات حرفه‌ای</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5>تماس</h5>
+            <div class="footer-contact-note">
+              تهران، پاسداران، خیابان گل‌نبی، بعد از ناطق نوری، پلاک ۴۱، واحد ۸
+            </div>
+            <div class="footer-contact-note">
+              <a href="tel:02126712860">۰۲۱-۲۶۷۱۲۸۶۰</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© موسسه حسابرسی آبان حساب — تمامی حقوق محفوظ است.</span>
+          <span>حسابداران رسمی</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/scroll-reveal.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
+</html>
