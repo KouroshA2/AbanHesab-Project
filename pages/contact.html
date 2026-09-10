@@ -2,6 +2,9 @@
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/icons/favicon-512.png" />
+    <link rel="apple-touch-icon" href="../assets/icons/favicon-512.png" />
     <script>
       (function () {
         try {
@@ -25,16 +28,25 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fa_IR" />
     <meta property="og:site_name" content="موسسه حسابرسی آبان حساب" />
+    <meta property="og:url" content="https://abanhesab.ir/pages/contact.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="تماس با ما | موسسه حسابرسی آبان حساب" />
+    <meta name="twitter:description" content="راه‌های تماس با موسسه حسابرسی آبان حساب شامل آدرس دفتر در تهران، پاسداران، شماره تماس و فرم ارتباط برای درخواست مشاوره." />
     <link rel="stylesheet" href="../css/vazirmatn-local.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/lang-switcher.css" />
+    <link rel="alternate" hreflang="fa" href="https://abanhesab.ir/pages/contact.html" />
+    <link rel="alternate" hreflang="en" href="https://abanhesab.ir/en/pages/contact.html" />
+    <link rel="alternate" hreflang="x-default" href="https://abanhesab.ir/pages/contact.html" />
+    <link rel="canonical" href="https://abanhesab.ir/pages/contact.html" />
   </head>
   <body>
+    <a href="#contact-page" class="skip-link">پرش به محتوای اصلی</a>
     <!-- ================= HEADER ================= -->
     <header id="site-header">
       <div class="container">
         <a href="../index.html" class="logo">
-          <span class="logo-mark"></span>
+          <img class="logo-mark" src="../assets/logo/logo-mark.png" alt="" />
           <span class="logo-text">آبان حساب<small>موسسه حسابرسی</small></span>
         </a>
 
@@ -45,7 +57,7 @@
             <li><a href="services.html" class="nav-link">خدمات</a></li>
             <li><a href="experience.html" class="nav-link">تجربه ما</a></li>
             <li>
-              <a href="contact.html" class="nav-link active">تماس با ما</a>
+              <a href="contact.html" class="nav-link active" aria-current="page">تماس با ما</a>
             </li>
           </ul>
         </nav>
@@ -76,6 +88,8 @@
             class="mobile-toggle"
             id="mobile-open-btn"
             aria-label="باز کردن منو"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
           >
             <svg
               viewBox="0 0 24 24"
@@ -91,10 +105,10 @@
     </header>
 
     <!-- ================= MOBILE MENU ================= -->
-    <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu" inert>
       <div class="mobile-menu-top">
         <span class="logo">
-          <span class="logo-mark"></span>
+          <img class="logo-mark" src="../assets/logo/logo-mark.png" alt="" />
           <span class="logo-text">آبان حساب</span>
         </span>
         <div class="mobile-menu-actions">
@@ -126,7 +140,7 @@
         <li><a href="services.html" class="nav-link-mobile">خدمات</a></li>
         <li><a href="experience.html" class="nav-link-mobile">تجربه ما</a></li>
         <li>
-          <a href="contact.html" class="nav-link-mobile active">تماس با ما</a>
+          <a href="contact.html" class="nav-link-mobile active" aria-current="page">تماس با ما</a>
         </li>
       </ul>
       <a
@@ -177,7 +191,9 @@
             <div class="eyebrow">فرم تماس</div>
             <h2 class="section-title">برای ما پیام بگذارید</h2>
           </div>
-          <form class="contact-form" id="contact-form" onsubmit="return false;">
+          <form class="contact-form" id="contact-form">
+            <!-- TODO: paste the real Web3Forms Access Key below before going live -->
+            <input type="hidden" name="access_key" value="" />
             <div class="form-row">
               <div class="form-field">
                 <label for="cf-name">نام</label>
@@ -186,6 +202,7 @@
                   id="cf-name"
                   name="name"
                   autocomplete="name"
+                  required
                 />
               </div>
               <div class="form-field">
@@ -215,6 +232,7 @@
                   id="cf-email"
                   name="email"
                   autocomplete="email"
+                  required
                 />
               </div>
             </div>
@@ -231,12 +249,15 @@
             </div>
             <div class="form-field">
               <label for="cf-message">پیام</label>
-              <textarea id="cf-message" name="message"></textarea>
+              <textarea id="cf-message" name="message" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">ارسال پیام</button>
-            <p class="form-note">
-              این فرم در حال حاضر نمایشی است و پیام‌ها ارسال یا ذخیره نمی‌شوند.
-            </p>
+            <p
+              class="form-note"
+              id="contact-form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
           </form>
         </div>
       </section>
@@ -248,7 +269,7 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="logo">
-              <span class="logo-mark"></span>
+              <img class="logo-mark" src="../assets/logo/logo-mark.png" alt="" />
               <span class="logo-text">آبان حساب</span>
             </div>
             <p>
@@ -261,7 +282,6 @@
             <ul>
               <li><a href="about.html">درباره ما</a></li>
               <li><a href="services.html">خدمات</a></li>
-              <li><a href="industries.html">صنایع</a></li>
               <li><a href="experience.html">تجربه ما</a></li>
               <li><a href="contact.html">تماس با ما</a></li>
             </ul>
@@ -300,5 +320,6 @@
     <script src="../js/animations.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/theme.js"></script>
+    <script src="../js/contact-form.js"></script>
   </body>
 </html>

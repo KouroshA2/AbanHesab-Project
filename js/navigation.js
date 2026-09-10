@@ -5,17 +5,38 @@
   function initMobileMenu() {
     const mobileMenu = document.getElementById("mobile-menu");
     if (!mobileMenu) return;
-    document
-      .getElementById("mobile-open-btn")
-      .addEventListener("click", () => mobileMenu.classList.add("open"));
-    document
-      .getElementById("mobile-close-btn")
-      .addEventListener("click", () => mobileMenu.classList.remove("open"));
+    const openBtn = document.getElementById("mobile-open-btn");
+    const closeBtn = document.getElementById("mobile-close-btn");
+
+    function openMenu() {
+      mobileMenu.classList.add("open");
+      mobileMenu.removeAttribute("inert");
+      if (openBtn) openBtn.setAttribute("aria-expanded", "true");
+    }
+
+    function closeMenu(options) {
+      const returnFocus = options && options.returnFocus;
+      mobileMenu.classList.remove("open");
+      mobileMenu.setAttribute("inert", "");
+      if (openBtn) {
+        openBtn.setAttribute("aria-expanded", "false");
+        if (returnFocus) openBtn.focus();
+      }
+    }
+
+    if (openBtn) openBtn.addEventListener("click", openMenu);
+    if (closeBtn)
+      closeBtn.addEventListener("click", () =>
+        closeMenu({ returnFocus: true })
+      );
     mobileMenu
       .querySelectorAll("a")
-      .forEach((a) =>
-        a.addEventListener("click", () => mobileMenu.classList.remove("open")),
-      );
+      .forEach((a) => a.addEventListener("click", () => closeMenu()));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && mobileMenu.classList.contains("open")) {
+        closeMenu({ returnFocus: true });
+      }
+    });
   }
 
   // ---------- Router (foundation for future pages) ----------
@@ -54,7 +75,13 @@
 
   function setActiveNav(route) {
     document.querySelectorAll(".nav-link, .nav-link-mobile").forEach((a) => {
-      a.classList.toggle("active", a.getAttribute("data-route") === route);
+      const isActive = a.getAttribute("data-route") === route;
+      a.classList.toggle("active", isActive);
+      if (isActive) {
+        a.setAttribute("aria-current", "page");
+      } else {
+        a.removeAttribute("aria-current");
+      }
     });
   }
 

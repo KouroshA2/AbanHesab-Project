@@ -23,12 +23,16 @@
   }
 
   function applyTheme(theme) {
-    if (theme === "dark") {
+    var isDark = theme === "dark";
+    if (isDark) {
       root.setAttribute("data-theme", "dark");
       if (iconEl) iconEl.textContent = "☀️";
     } else {
       root.removeAttribute("data-theme");
       if (iconEl) iconEl.textContent = "🌙";
+    }
+    if (toggleBtn) {
+      toggleBtn.setAttribute("aria-pressed", String(isDark));
     }
   }
 

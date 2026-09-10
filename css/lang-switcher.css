@@ -71,6 +71,17 @@ html[dir="ltr"] .btn-arrow:hover svg {
   transform: scaleX(-1) translateX(4px);
 }
 
+/* Service list bullets are right-anchored in the base stylesheet
+   (RTL-only). Mirror them to the left for LTR pages. */
+html[dir="ltr"] .service-card li {
+  padding-right: 0;
+  padding-left: 16px;
+}
+html[dir="ltr"] .service-card li::before {
+  right: auto;
+  left: 0;
+}
+
 /* =========================================================
    Stage 20 — links to English pages not built yet
    Applied to <a> elements with no href (nav items, CTA

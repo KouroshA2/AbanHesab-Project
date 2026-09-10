@@ -2,6 +2,9 @@
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/favicon-512.png" />
+    <link rel="apple-touch-icon" href="assets/icons/favicon-512.png" />
     <script>
       (function () {
         try {
@@ -15,7 +18,7 @@
     <title>موسسه حسابرسی آبان حساب | حسابداران رسمی</title>
     <meta
       name="description"
-      content="موسسه حسابرسی آبان حساب (حسابداران رسمی) از سال ۱۳۸۱ خدمات حرفه‌ای حسابرسی، مالی، حسابداری، مالیاتی و مشاوره مدیریت را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد."
+      content="موسسه حسابرسی آبان حساب (حسابداران رسمی) از سال ۱۳۸۱ خدمات حسابرسی، مالی، حسابداری، مالیاتی و مشاوره مدیریت را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد."
     />
     <meta
       property="og:title"
@@ -23,23 +26,44 @@
     />
     <meta
       property="og:description"
-      content="موسسه حسابرسی آبان حساب (حسابداران رسمی) از سال ۱۳۸۱ خدمات حرفه‌ای حسابرسی، مالی، حسابداری، مالیاتی و مشاوره مدیریت را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد."
+      content="موسسه حسابرسی آبان حساب (حسابداران رسمی) از سال ۱۳۸۱ خدمات حسابرسی، مالی، حسابداری، مالیاتی و مشاوره مدیریت را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد."
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fa_IR" />
     <meta property="og:site_name" content="موسسه حسابرسی آبان حساب" />
+    <meta property="og:url" content="https://abanhesab.ir/index.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="موسسه حسابرسی آبان حساب | حسابداران رسمی" />
+    <meta name="twitter:description" content="موسسه حسابرسی آبان حساب (حسابداران رسمی) از سال ۱۳۸۱ خدمات حسابرسی، مالی، حسابداری، مالیاتی و مشاوره مدیریت را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد." />
     <link rel="stylesheet" href="css/vazirmatn-local.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/lang-switcher.css" />
-    <link rel="alternate" hreflang="fa" href="index.html" />
-    <link rel="alternate" hreflang="en" href="en/index.html" />
+    <link rel="alternate" hreflang="fa" href="https://abanhesab.ir/index.html" />
+    <link rel="alternate" hreflang="en" href="https://abanhesab.ir/en/index.html" />
+    <link rel="alternate" hreflang="x-default" href="https://abanhesab.ir/index.html" />
+    <link rel="canonical" href="https://abanhesab.ir/index.html" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "موسسه حسابرسی آبان حساب",
+        "url": "https://abanhesab.ir/index.html",
+        "telephone": "02126712860",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "تهران، پاسداران، خیابان گل‌نبی، بعد از ناطق نوری، پلاک ۴۱، واحد ۸",
+          "addressLocality": "تهران"
+        }
+      }
+    </script>
   </head>
   <body>
+    <a href="#home-page" class="skip-link">پرش به محتوای اصلی</a>
     <!-- ================= HEADER ================= -->
     <header id="site-header">
       <div class="container">
         <a href="#/" class="logo" data-route="">
-          <span class="logo-mark"></span>
+          <img class="logo-mark" src="assets/logo/logo-mark.png" alt="" />
           <span class="logo-text">آبان حساب<small>موسسه حسابرسی</small></span>
         </a>
 
@@ -111,6 +135,8 @@
             class="mobile-toggle"
             id="mobile-open-btn"
             aria-label="باز کردن منو"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
           >
             <svg
               viewBox="0 0 24 24"
@@ -126,10 +152,10 @@
     </header>
 
     <!-- ================= MOBILE MENU ================= -->
-    <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu" inert>
       <div class="mobile-menu-top">
         <span class="logo">
-          <span class="logo-mark"></span>
+          <img class="logo-mark" src="assets/logo/logo-mark.png" alt="" />
           <span class="logo-text">آبان حساب</span>
         </span>
         <div class="mobile-menu-actions">
@@ -593,6 +619,7 @@
                 <img
                   src="assets/images/team/hassan-hassanzadeh.jpg"
                   alt="حسن حسن‌زاده"
+                  loading="lazy"
                 />
               </div>
               <h4>حسن حسن‌زاده</h4>
@@ -603,6 +630,7 @@
                 <img
                   src="assets/images/team/meysam-moslemi.jpg"
                   alt="میثم مسلمی"
+                  loading="lazy"
                 />
               </div>
               <h4>میثم مسلمی</h4>
@@ -613,6 +641,7 @@
                 <img
                   src="assets/images/team/farzad-bayat.jpg"
                   alt="فرزاد بیات"
+                  loading="lazy"
                 />
               </div>
               <h4>فرزاد بیات</h4>
@@ -623,6 +652,7 @@
                 <img
                   src="assets/images/team/elnaz-golzari.jpg"
                   alt="الناز گلزاری"
+                  loading="lazy"
                 />
               </div>
               <h4>الناز گلزاری</h4>
@@ -675,7 +705,7 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="logo">
-              <span class="logo-mark"></span>
+              <img class="logo-mark" src="assets/logo/logo-mark.png" alt="" />
               <span class="logo-text">آبان حساب</span>
             </div>
             <p>
@@ -691,11 +721,6 @@
               </li>
               <li>
                 <a href="pages/services.html" data-route="services">خدمات</a>
-              </li>
-              <li>
-                <a href="pages/industries.html" data-route="industries"
-                  >صنایع</a
-                >
               </li>
               <li>
                 <a href="pages/experience.html" data-route="experience"

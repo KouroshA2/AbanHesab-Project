@@ -1,0 +1,8 @@
+# Aban Hesab Audit Institute — robots.txt
+# All pages of the site are allowed to be crawled.
+# No page is blocked without reason.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://abanhesab.ir/sitemap.xml

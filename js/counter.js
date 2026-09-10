@@ -32,6 +32,9 @@
       });
 
     // ---------- Count-up stats ----------
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     const counters = document.querySelectorAll("[data-count]");
     const counterObserver = new IntersectionObserver(
       (entries) => {
@@ -39,6 +42,11 @@
           if (entry.isIntersecting) {
             const el = entry.target;
             const target = parseInt(el.getAttribute("data-count"), 10);
+            if (prefersReducedMotion) {
+              el.textContent = toPersianDigits(target);
+              counterObserver.unobserve(el);
+              return;
+            }
             let current = 0;
             const duration = 1100;
             const start = performance.now();

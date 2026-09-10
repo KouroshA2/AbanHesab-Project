@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Aban Hesab Audit Institute — sitemap.xml
+  Production domain: https://abanhesab.ir/
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Persian (FA) pages -->
+  <url>
+    <loc>https://abanhesab.ir/index.html</loc>
+  </url>
+  <url>
+    <loc>https://abanhesab.ir/pages/about.html</loc>
+  </url>
+  <url>
+    <loc>https://abanhesab.ir/pages/services.html</loc>
+  </url>
+  <url>
+    <loc>https://abanhesab.ir/pages/experience.html</loc>
+  </url>
+  <url>
+    <loc>https://abanhesab.ir/pages/team.html</loc>
+  </url>
+  <url>
+    <loc>https://abanhesab.ir/pages/contact.html</loc>
+  </url>
+
+  <!-- English (EN) pages -->
+  <url>
+    <loc>https://abanhesab.ir/en/index.html</loc>
+  </url>
+  <url>
+    <loc>https://abanhesab.ir/en/pages/about.html</loc>
+  </url>
+  <url>
+    <loc>https://abanhesab.ir/en/pages/services.html</loc>
+  </url>
+  <url>
+    <loc>https://abanhesab.ir/en/pages/experience.html</loc>
+  </url>
+  <url>
+    <loc>https://abanhesab.ir/en/pages/team.html</loc>
+  </url>
+  <url>
+    <loc>https://abanhesab.ir/en/pages/contact.html</loc>
+  </url>
+
+</urlset>
