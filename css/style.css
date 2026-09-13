@@ -31,10 +31,7 @@
   --text-body: var(--ink);
   --text-copy: var(--gray-700);
   --text-secondary: var(--gray-500);
-  /* gray-400 (#9aa3b2) is only ~2.5:1 on white/gray-50, well below
-       AA for the small text this token is used for. This keeps the
-       same hue family but stays above 4.5:1 on both surfaces. */
-  --text-muted: #62707e;
+  --text-muted: var(--gray-400);
   --chip-bg: var(--sky-100);
   /* Darker accent for small text/labels on light surfaces —
        --sky-500 alone fails AA contrast on white; this keeps the
@@ -176,6 +173,24 @@ button {
   border-radius: 2px;
 }
 
+/* ---------- Skip to content link ---------- */
+.skip-link {
+  position: absolute;
+  inset-inline-start: 0;
+  top: -100%;
+  z-index: 999;
+  background: var(--sky-500);
+  color: var(--white);
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 0 0 var(--radius-sm) 0;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
 /* ---------- Typography scale ---------- */
 .eyebrow {
   font-size: 13px;
@@ -265,9 +280,6 @@ section {
 }
 .btn-primary:hover {
   background: var(--sky-500);
-  /* White text on sky-500 is only 3.46:1 (fails AA). navy-900 keeps
-       the same accent background but reaches 5.25:1. */
-  color: var(--navy-900);
   transform: translateY(-2px);
   box-shadow: 0 12px 22px -10px rgba(11, 22, 38, 0.35);
 }
@@ -346,10 +358,30 @@ header.scrolled {
   color: var(--text-heading);
 }
 .logo-mark {
-  width: 46px;
-  height: 46px;
-  object-fit: contain;
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid var(--sky-400);
+  border-radius: 3px;
+  position: relative;
   flex-shrink: 0;
+}
+.logo-mark::before,
+.logo-mark::after {
+  content: "";
+  position: absolute;
+  background: var(--sky-400);
+}
+.logo-mark::before {
+  width: 14px;
+  height: 1.5px;
+  top: 11px;
+  right: 8px;
+}
+.logo-mark::after {
+  width: 14px;
+  height: 1.5px;
+  bottom: 11px;
+  right: 8px;
 }
 .logo-text small {
   display: block;
@@ -409,13 +441,9 @@ nav.main-nav a.active::after {
 }
 .header-cta .btn-primary {
   background: var(--sky-500);
-  /* White text on sky-500/sky-400 fails AA (3.46:1 / 2.36:1);
-       navy-900 keeps the accent background but stays readable. */
-  color: var(--navy-900);
 }
 .header-cta .btn-primary:hover {
   background: var(--sky-400);
-  color: var(--navy-900);
 }
 /* Header sits transparently over the Hero (or solid once scrolled),
      so its outline button must follow the theme like everything else.
@@ -477,13 +505,22 @@ nav.main-nav a.active::after {
   overflow-y: auto;
   transform: translateY(-3px);
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: all var(--dur-med) var(--ease);
+  transition:
+    opacity var(--dur-med) var(--ease),
+    transform var(--dur-med) var(--ease),
+    visibility 0s linear var(--dur-med);
 }
 .mobile-menu.open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
   transform: translateY(0);
+  transition:
+    opacity var(--dur-med) var(--ease),
+    transform var(--dur-med) var(--ease),
+    visibility 0s linear 0s;
 }
 .mobile-menu-top {
   display: flex;
@@ -561,8 +598,8 @@ nav.main-nav a.active::after {
     font-size: 15px;
   }
   .logo-mark {
-    width: 38px;
-    height: 38px;
+    width: 30px;
+    height: 30px;
   }
   .header-cta {
     gap: 8px;
@@ -944,6 +981,7 @@ html[lang="en"] .header-cta .btn {
 .service-card:hover .service-index {
   transform: scale(1.08);
 }
+.service-card h2,
 .service-card h3 {
   font-size: 19px;
   margin-bottom: 16px;
@@ -1129,12 +1167,13 @@ html[lang="en"] .header-cta .btn {
   letter-spacing: 0.03em;
   margin-bottom: 14px;
 }
-.cred-card h4 {
+.cred-card h3 {
   font-size: 17px;
   font-weight: 700;
   color: var(--text-heading);
   margin-bottom: 10px;
   line-height: 1.7;
+  letter-spacing: normal;
 }
 .cred-card .cred-detail {
   font-size: 14px;
@@ -1195,11 +1234,13 @@ html[lang="en"] .header-cta .btn {
   object-fit: cover;
   display: block;
 }
-.member-card h4 {
+.member-card h3 {
   font-size: 15px;
   font-weight: 700;
   color: var(--text-heading);
   margin-bottom: 6px;
+  line-height: 1.5;
+  letter-spacing: normal;
 }
 .member-card span {
   font-size: 12.5px;
@@ -1258,11 +1299,14 @@ footer {
   max-width: 300px;
   line-height: 1.9;
 }
-footer h5 {
+footer h2,
+footer h3 {
   font-size: 13.5px;
   font-weight: 700;
   color: var(--text-heading);
   margin-bottom: 22px;
+  line-height: 1.85;
+  letter-spacing: normal;
 }
 footer ul {
   display: flex;
@@ -1468,10 +1512,12 @@ footer ul a:hover {
   border-radius: 999px;
   margin-bottom: 16px;
 }
-.contact-info-card h4 {
+.contact-info-card h2 {
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 10px;
+  line-height: 1.5;
+  letter-spacing: normal;
 }
 .contact-info-card p {
   font-size: 15px;
@@ -1521,17 +1567,9 @@ footer ul a:hover {
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: var(--sky-400);
-}
-/* The border-color tint above was the only focus indicator (outline
-     was removed), which is far below the ~3:1 non-text contrast
-     needed to be reliably visible. Restore a clear outline for
-     keyboard focus, matching the sitewide :focus-visible style. */
-.contact-form input:focus-visible,
-.contact-form select:focus-visible,
-.contact-form textarea:focus-visible {
-  outline: 2px solid var(--sky-500);
+  outline: 2px solid var(--sky-400);
   outline-offset: 2px;
+  border-color: var(--sky-400);
 }
 .contact-form textarea {
   resize: vertical;
@@ -1561,7 +1599,7 @@ footer ul a:hover {
   border-radius: var(--radius-md);
   padding: 64px 40px;
 }
-.empty-state h3 {
+.empty-state h2 {
   font-size: 20px;
   font-weight: 800;
   color: var(--text-heading);
@@ -1600,21 +1638,4 @@ footer ul a:hover {
     gap: 36px;
     padding-bottom: 40px;
   }
-}
-
-/* ---------- Skip link (Stage 11 accessibility) ---------- */
-.skip-link {
-  position: absolute;
-  top: -80px;
-  inset-inline-start: 0;
-  z-index: 300;
-  background: var(--sky-500);
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
-  font-weight: 700;
-  transition: top var(--dur-fast) var(--ease);
-}
-.skip-link:focus {
-  top: 0;
 }

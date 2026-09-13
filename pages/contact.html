@@ -2,9 +2,6 @@
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="512x512" href="../assets/icons/favicon-512.png" />
-    <link rel="apple-touch-icon" href="../assets/icons/favicon-512.png" />
     <script>
       (function () {
         try {
@@ -41,12 +38,12 @@
     <link rel="canonical" href="https://abanhesab.ir/pages/contact.html" />
   </head>
   <body>
-    <a href="#contact-page" class="skip-link">پرش به محتوای اصلی</a>
+    <a href="#contact-page" class="skip-link">رفتن به محتوای اصلی</a>
     <!-- ================= HEADER ================= -->
     <header id="site-header">
       <div class="container">
         <a href="../index.html" class="logo">
-          <img class="logo-mark" src="../assets/logo/logo-mark.png" alt="" />
+          <span class="logo-mark"></span>
           <span class="logo-text">آبان حساب<small>موسسه حسابرسی</small></span>
         </a>
 
@@ -72,7 +69,7 @@
           <a href="#contact-form" class="btn btn-primary">درخواست مشاوره</a>
           <div class="lang-switch" role="group" aria-label="زبان / Language">
             <a href="../en/pages/contact.html" class="lang-btn" lang="en">EN</a>
-            <a href="#" class="lang-btn is-active" lang="fa" aria-current="page"
+            <a href="contact.html" class="lang-btn is-active" lang="fa" aria-current="page"
               >FA</a
             >
           </div>
@@ -81,6 +78,7 @@
             id="theme-toggle-btn"
             type="button"
             aria-label="تغییر پوسته روشن/تیره"
+            aria-pressed="false"
           >
             <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
           </button>
@@ -105,16 +103,16 @@
     </header>
 
     <!-- ================= MOBILE MENU ================= -->
-    <div class="mobile-menu" id="mobile-menu" inert>
+    <div class="mobile-menu" id="mobile-menu">
       <div class="mobile-menu-top">
         <span class="logo">
-          <img class="logo-mark" src="../assets/logo/logo-mark.png" alt="" />
+          <span class="logo-mark"></span>
           <span class="logo-text">آبان حساب</span>
         </span>
         <div class="mobile-menu-actions">
           <div class="lang-switch" role="group" aria-label="زبان / Language">
             <a href="../en/pages/contact.html" class="lang-btn" lang="en">EN</a>
-            <a href="#" class="lang-btn is-active" lang="fa" aria-current="page"
+            <a href="contact.html" class="lang-btn is-active" lang="fa" aria-current="page"
               >FA</a
             >
           </div>
@@ -173,7 +171,7 @@
           <div class="contact-info-grid">
             <div class="contact-info-card">
               <div class="cred-tag">آدرس</div>
-              <h4>دفتر موسسه</h4>
+              <h2>دفتر موسسه</h2>
               <p>
                 تهران، پاسداران، خیابان گل‌نبی، بعد از ناطق نوری، پلاک ۴۱، واحد
                 ۸
@@ -181,7 +179,7 @@
             </div>
             <div class="contact-info-card">
               <div class="cred-tag">تلفن</div>
-              <h4>تماس تلفنی</h4>
+              <h2>تماس تلفنی</h2>
               <p><a href="tel:02126712860">۰۲۱-۲۶۷۱۲۸۶۰</a></p>
             </div>
           </div>
@@ -191,9 +189,7 @@
             <div class="eyebrow">فرم تماس</div>
             <h2 class="section-title">برای ما پیام بگذارید</h2>
           </div>
-          <form class="contact-form" id="contact-form">
-            <!-- TODO: paste the real Web3Forms Access Key below before going live -->
-            <input type="hidden" name="access_key" value="" />
+          <form class="contact-form" id="contact-form" onsubmit="return false;">
             <div class="form-row">
               <div class="form-field">
                 <label for="cf-name">نام</label>
@@ -202,7 +198,6 @@
                   id="cf-name"
                   name="name"
                   autocomplete="name"
-                  required
                 />
               </div>
               <div class="form-field">
@@ -232,7 +227,6 @@
                   id="cf-email"
                   name="email"
                   autocomplete="email"
-                  required
                 />
               </div>
             </div>
@@ -249,15 +243,12 @@
             </div>
             <div class="form-field">
               <label for="cf-message">پیام</label>
-              <textarea id="cf-message" name="message" required></textarea>
+              <textarea id="cf-message" name="message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">ارسال پیام</button>
-            <p
-              class="form-note"
-              id="contact-form-status"
-              role="status"
-              aria-live="polite"
-            ></p>
+            <p class="form-note">
+              این فرم در حال حاضر نمایشی است و پیام‌ها ارسال یا ذخیره نمی‌شوند.
+            </p>
           </form>
         </div>
       </section>
@@ -269,7 +260,7 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="logo">
-              <img class="logo-mark" src="../assets/logo/logo-mark.png" alt="" />
+              <span class="logo-mark"></span>
               <span class="logo-text">آبان حساب</span>
             </div>
             <p>
@@ -278,7 +269,7 @@
             </p>
           </div>
           <div>
-            <h5>دسترسی سریع</h5>
+            <h3>دسترسی سریع</h3>
             <ul>
               <li><a href="about.html">درباره ما</a></li>
               <li><a href="services.html">خدمات</a></li>
@@ -287,7 +278,7 @@
             </ul>
           </div>
           <div>
-            <h5>خدمات</h5>
+            <h3>خدمات</h3>
             <ul>
               <li><a href="services.html">حسابرسی</a></li>
               <li><a href="services.html">مالی، حسابداری و مالیاتی</a></li>
@@ -295,7 +286,7 @@
             </ul>
           </div>
           <div>
-            <h5>تماس</h5>
+            <h3>تماس</h3>
             <div class="footer-contact-note">
               تهران، پاسداران، خیابان گل‌نبی، بعد از ناطق نوری، پلاک ۴۱، واحد ۸
             </div>
@@ -320,6 +311,5 @@
     <script src="../js/animations.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/theme.js"></script>
-    <script src="../js/contact-form.js"></script>
   </body>
 </html>

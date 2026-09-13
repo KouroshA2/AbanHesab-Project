@@ -68,9 +68,9 @@
         card.appendChild(avatar);
       }
 
-      const h4 = document.createElement("h4");
-      h4.textContent = name;
-      card.appendChild(h4);
+      const h3 = document.createElement("h3");
+      h3.textContent = name;
+      card.appendChild(h3);
 
       if (role) {
         const span = document.createElement("span");

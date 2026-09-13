@@ -2,9 +2,6 @@
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/favicon-512.png" />
-    <link rel="apple-touch-icon" href="assets/icons/favicon-512.png" />
     <script>
       (function () {
         try {
@@ -26,7 +23,7 @@
     />
     <meta
       property="og:description"
-      content="موسسه حسابرسی آبان حساب (حسابداران رسمی) از سال ۱۳۸۱ خدمات حسابرسی، مالی، حسابداری، مالیاتی و مشاوره مدیریت را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد."
+      content="موسسه حسابرسی آبان حساب (حسابداران رسمی) از سال ۱۳۸۱ خدمات حرفه‌ای حسابرسی، مالی، حسابداری، مالیاتی و مشاوره مدیریت را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد."
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fa_IR" />
@@ -34,7 +31,7 @@
     <meta property="og:url" content="https://abanhesab.ir/index.html" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="موسسه حسابرسی آبان حساب | حسابداران رسمی" />
-    <meta name="twitter:description" content="موسسه حسابرسی آبان حساب (حسابداران رسمی) از سال ۱۳۸۱ خدمات حسابرسی، مالی، حسابداری، مالیاتی و مشاوره مدیریت را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد." />
+    <meta name="twitter:description" content="موسسه حسابرسی آبان حساب (حسابداران رسمی) از سال ۱۳۸۱ خدمات حرفه‌ای حسابرسی، مالی، حسابداری، مالیاتی و مشاوره مدیریت را به شرکت‌های ایرانی و بین‌المللی ارائه می‌دهد." />
     <link rel="stylesheet" href="css/vazirmatn-local.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/lang-switcher.css" />
@@ -58,18 +55,18 @@
     </script>
   </head>
   <body>
-    <a href="#home-page" class="skip-link">پرش به محتوای اصلی</a>
+    <a href="#home-page" class="skip-link">رفتن به محتوای اصلی</a>
     <!-- ================= HEADER ================= -->
     <header id="site-header">
       <div class="container">
         <a href="#/" class="logo" data-route="">
-          <img class="logo-mark" src="assets/logo/logo-mark.png" alt="" />
+          <span class="logo-mark"></span>
           <span class="logo-text">آبان حساب<small>موسسه حسابرسی</small></span>
         </a>
 
         <nav class="main-nav" aria-label="منوی اصلی">
           <ul>
-            <li><a href="#/" data-route="" class="nav-link">خانه</a></li>
+            <li><a href="#/" data-route="" class="nav-link" aria-current="page">خانه</a></li>
             <li>
               <a href="pages/about.html" data-route="about" class="nav-link"
                 >درباره ما</a
@@ -128,6 +125,7 @@
             id="theme-toggle-btn"
             type="button"
             aria-label="تغییر پوسته روشن/تیره"
+            aria-pressed="false"
           >
             <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
           </button>
@@ -152,10 +150,10 @@
     </header>
 
     <!-- ================= MOBILE MENU ================= -->
-    <div class="mobile-menu" id="mobile-menu" inert>
+    <div class="mobile-menu" id="mobile-menu">
       <div class="mobile-menu-top">
         <span class="logo">
-          <img class="logo-mark" src="assets/logo/logo-mark.png" alt="" />
+          <span class="logo-mark"></span>
           <span class="logo-text">آبان حساب</span>
         </span>
         <div class="mobile-menu-actions">
@@ -186,7 +184,7 @@
         </div>
       </div>
       <ul>
-        <li><a href="#/" data-route="" class="nav-link-mobile">خانه</a></li>
+        <li><a href="#/" data-route="" class="nav-link-mobile" aria-current="page">خانه</a></li>
         <li>
           <a href="pages/about.html" data-route="about" class="nav-link-mobile"
             >درباره ما</a
@@ -591,12 +589,12 @@
           <div class="cred-grid reveal">
             <div class="cred-card">
               <div class="cred-tag">عضویت رسمی</div>
-              <h4>عضو جامعه حسابداران رسمی ایران</h4>
+              <h3>عضو جامعه حسابداران رسمی ایران</h3>
               <div class="cred-detail">کد عضویت: ۷۲۱۰۰۴</div>
             </div>
             <div class="cred-card">
               <div class="cred-tag">سابقه اعتباری</div>
-              <h4>عضو موسسات معتمد سازمان بورس اوراق بهادار با رتبه «الف»</h4>
+              <h3>عضو موسسات معتمد سازمان بورس اوراق بهادار با رتبه «الف»</h3>
               <div class="cred-detail">تا سال ۱۳۹۷</div>
               <div class="cred-note">
                 این مورد مربوط به وضعیت تاریخی موسسه تا سال ۱۳۹۷ است.
@@ -622,7 +620,7 @@
                   loading="lazy"
                 />
               </div>
-              <h4>حسن حسن‌زاده</h4>
+              <h3>حسن حسن‌زاده</h3>
               <span>شریک و رئیس هیئت مدیره</span>
             </div>
             <div class="member-card">
@@ -633,7 +631,7 @@
                   loading="lazy"
                 />
               </div>
-              <h4>میثم مسلمی</h4>
+              <h3>میثم مسلمی</h3>
               <span>شریک و مدیرعامل</span>
             </div>
             <div class="member-card">
@@ -644,7 +642,7 @@
                   loading="lazy"
                 />
               </div>
-              <h4>فرزاد بیات</h4>
+              <h3>فرزاد بیات</h3>
               <span>شریک و نایب رئیس هیئت مدیره</span>
             </div>
             <div class="member-card">
@@ -655,7 +653,7 @@
                   loading="lazy"
                 />
               </div>
-              <h4>الناز گلزاری</h4>
+              <h3>الناز گلزاری</h3>
               <span>مدیر فنی</span>
             </div>
           </div>
@@ -705,7 +703,7 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <div class="logo">
-              <img class="logo-mark" src="assets/logo/logo-mark.png" alt="" />
+              <span class="logo-mark"></span>
               <span class="logo-text">آبان حساب</span>
             </div>
             <p>
@@ -714,7 +712,7 @@
             </p>
           </div>
           <div>
-            <h5>دسترسی سریع</h5>
+            <h3>دسترسی سریع</h3>
             <ul>
               <li>
                 <a href="pages/about.html" data-route="about">درباره ما</a>
@@ -733,7 +731,7 @@
             </ul>
           </div>
           <div>
-            <h5>خدمات</h5>
+            <h3>خدمات</h3>
             <ul>
               <li>
                 <a href="pages/services.html" data-route="services">حسابرسی</a>
@@ -751,7 +749,7 @@
             </ul>
           </div>
           <div>
-            <h5>تماس</h5>
+            <h3>تماس</h3>
             <div class="footer-contact-note">
               تهران، پاسداران، خیابان گل‌نبی، بعد از ناطق نوری، پلاک ۴۱، واحد ۸
             </div>

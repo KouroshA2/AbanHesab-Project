@@ -23,16 +23,14 @@
   }
 
   function applyTheme(theme) {
-    var isDark = theme === "dark";
-    if (isDark) {
+    if (theme === "dark") {
       root.setAttribute("data-theme", "dark");
       if (iconEl) iconEl.textContent = "☀️";
+      if (toggleBtn) toggleBtn.setAttribute("aria-pressed", "true");
     } else {
       root.removeAttribute("data-theme");
       if (iconEl) iconEl.textContent = "🌙";
-    }
-    if (toggleBtn) {
-      toggleBtn.setAttribute("aria-pressed", String(isDark));
+      if (toggleBtn) toggleBtn.setAttribute("aria-pressed", "false");
     }
   }
 

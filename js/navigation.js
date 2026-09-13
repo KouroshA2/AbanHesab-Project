@@ -10,33 +10,18 @@
 
     function openMenu() {
       mobileMenu.classList.add("open");
-      mobileMenu.removeAttribute("inert");
       if (openBtn) openBtn.setAttribute("aria-expanded", "true");
     }
-
-    function closeMenu(options) {
-      const returnFocus = options && options.returnFocus;
+    function closeMenu() {
       mobileMenu.classList.remove("open");
-      mobileMenu.setAttribute("inert", "");
-      if (openBtn) {
-        openBtn.setAttribute("aria-expanded", "false");
-        if (returnFocus) openBtn.focus();
-      }
+      if (openBtn) openBtn.setAttribute("aria-expanded", "false");
     }
 
     if (openBtn) openBtn.addEventListener("click", openMenu);
-    if (closeBtn)
-      closeBtn.addEventListener("click", () =>
-        closeMenu({ returnFocus: true })
-      );
+    if (closeBtn) closeBtn.addEventListener("click", closeMenu);
     mobileMenu
       .querySelectorAll("a")
-      .forEach((a) => a.addEventListener("click", () => closeMenu()));
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && mobileMenu.classList.contains("open")) {
-        closeMenu({ returnFocus: true });
-      }
-    });
+      .forEach((a) => a.addEventListener("click", closeMenu));
   }
 
   // ---------- Router (foundation for future pages) ----------
@@ -75,13 +60,7 @@
 
   function setActiveNav(route) {
     document.querySelectorAll(".nav-link, .nav-link-mobile").forEach((a) => {
-      const isActive = a.getAttribute("data-route") === route;
-      a.classList.toggle("active", isActive);
-      if (isActive) {
-        a.setAttribute("aria-current", "page");
-      } else {
-        a.removeAttribute("aria-current");
-      }
+      a.classList.toggle("active", a.getAttribute("data-route") === route);
     });
   }
 

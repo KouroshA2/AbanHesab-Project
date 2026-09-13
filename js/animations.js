@@ -29,11 +29,7 @@
       'خدماتی'
     ];
     const industriesGrid = document.getElementById('industries-grid');
-    // Guard: services/experience pages already render these 16 tiles
-    // statically in HTML (in the page's own language). Only inject here
-    // when the grid is genuinely empty, so we never duplicate content
-    // or inject Persian text into an already-built English page.
-    if(industriesGrid && industriesGrid.children.length === 0){
+    if(industriesGrid){
       industries.forEach((name, i) => {
         const tile = document.createElement('div');
         tile.className = 'industry-tile';
